@@ -21,9 +21,14 @@ body {
   }
   
   header h1 {
+    color: #9900FC;
     margin: 0;
     text-transform: lowercase;
     font-size: 3rem;
+  }
+
+  header h2 {
+    color: #777777;
   }
 
   #metadata {
@@ -36,8 +41,10 @@ body {
   }
   
   #banner {
-    background-color: #fff3e0;
-    border-left: 4px solid #ffa726;
+    color: #ffffff;
+    background-color: #9900FC;
+    border-left: 4px dotted #ffffff;;
+    font-size: 1.125rem;
     padding: 1rem;
     margin-bottom: 2rem;
     display:none;
