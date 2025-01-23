@@ -1,0 +1,45 @@
+name: Update Files JSON
+
+on:
+  push:
+    paths:
+      - "data/*.csv" # Trigger only when CSV files in the data folder are added/modified
+
+jobs:
+  generate-json:
+    runs-on: ubuntu-latest
+
+    steps:
+    # Step 1: Check out the repository
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    # Step 2: Set up bash environment
+    - name: Set up shell environment
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y bash
+
+    # Step 3: Run the bash script
+    - name: Generate files.json
+      run: |
+        chmod +x ./generate_file_json.sh
+        ./generate_file_json.sh
+
+    # Step 4: Commit and push changes
+    - name: Commit and push changes
+      run: |
+        git config user.name "github-actions[bot]"
+        git config user.email "github-actions[bot]@users.noreply.github.com"
+        git add ./data/files.json
+        git commit -m "Update files.json after new CSV upload"
+        git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    # Step 5: Deploy to GitHub Pages (optional)
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: . 
