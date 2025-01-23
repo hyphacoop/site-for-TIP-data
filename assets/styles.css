@@ -35,6 +35,10 @@ body {
     background-color: #e0e0e0;
     padding: 1rem;
   }
+
+  #freeform-text {
+    margin-bottom: 2rem;
+  }
   
   main {
     padding: 2rem;
