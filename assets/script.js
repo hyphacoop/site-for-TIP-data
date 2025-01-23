@@ -5,6 +5,7 @@ const monthSelector = document.getElementById('month-selector');
 const tableHeaders = document.getElementById('table-headers');
 const tableBody = document.querySelector('#scores-table tbody');
 const metadataList = document.getElementById('metadata-list');
+const eventInfo = document.getElementById('event-info');
 
 // Fetch announcements and update the banner
 async function loadAnnouncements() {
@@ -76,7 +77,7 @@ async function loadCSV(file) {
             if (cell.trim()) {
             const li = document.createElement('li');
             li.textContent = cell.trim(); // Full header with text after "-"
-            metadataList.appendChild(li);
+            eventInfo.appendChild(li);
             }
         });
   
