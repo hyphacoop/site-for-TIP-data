@@ -47,15 +47,18 @@ This is a basic website designed to display TIP data from the weekly testnet eve
 1. Place new CSV files in the `/data` folder. Files should follow the naming convention:
     - [month]_[year].csv
 
-2. Run the `generate_file_json.sh` script to update `files.json`: (this will eventually run automatically as part of the GH action)
-```bash
-./generate_file_json.sh
-```
+2. The GH action will generate `files.json`, an index file used to populate the dropdown selector and load monthly data. The GH page branch will be automatically updated and the website deployed to this address https://hyphacoop.github.io/site-for-TIP-data/ 
 
-3. Update announcements.json if needed:
+3. Update announcements.json if needed
 ```json
 {
-  "banner": "Upcoming event: Jan 28 - Submit scores by 5 PM"
+  "banner": "Upcoming event: Jan 28 - Announcement details"
+}
+```
+4. If no announcements are needed the value of banner can be left empty and the banner will disappear.
+```json
+{
+  "banner": ""
 }
 ```
 
