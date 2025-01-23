@@ -59,7 +59,7 @@ body {
   }
   
   #scores-table {
-    width: 100%;
+    min-width: 50vw;
     border-collapse: collapse;
     margin-top: 1rem;
     table-layout: fixed;
@@ -78,6 +78,11 @@ body {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: word-wrap;
+  }
+
+  table tr td:not(:first-child),
+  table tr th:not(:first-child) {
+    max-width: 100px;
   }
   
   #scores-table th {
