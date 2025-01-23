@@ -62,16 +62,50 @@ body {
     width: 100%;
     border-collapse: collapse;
     margin-top: 1rem;
+    table-layout: fixed;
+    border-spacing: 0;
+  }
+
+  #scores-table td {
+    position: relative; 
   }
   
   #scores-table th, #scores-table td {
     border: 1px solid #ddd;
     padding: 8px;
     text-align: left;
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: word-wrap;
   }
   
   #scores-table th {
     background-color: #e0e0e0;
+    font-weight: bold;
+  }
+
+  #scores-table td:hover {
+    overflow: visible;
+    white-space: normal;
+    background-color: #f9f9f9;
+    position: relative;
+    z-index: 10;
+  }
+
+  /* Ensure the hover content background covers the full area */
+  #scores-table td:hover::before {
+    content: attr(data-content); 
+    position: absolute;
+    padding: 8px;
+    top: 0;
+    left: 0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    z-index: -1;
+    width: max-content;
+    min-width: 100%;
+    box-sizing: border-box;
   }
   
   footer {

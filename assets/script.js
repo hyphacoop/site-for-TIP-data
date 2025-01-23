@@ -101,6 +101,7 @@ async function loadCSV(file) {
         row.forEach(cell => {
           const td = document.createElement('td');
           td.textContent = cell.trim();
+          td.setAttribute('data-content', cell.trim());
           tr.appendChild(td);
         });
         tableBody.appendChild(tr);
