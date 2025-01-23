@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Validator Scores</title>
+  <title>Testnet Incentives Program Tally</title>
   <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
   <header>
-    <h1>validator scores</h1>
-    <h2>data from the weekly testnet events</h2>
+    <h1>Cosmos Hub Testnet Incentives Program</h1>
+    <h2>From the Hub testnets team at Hypha Worker Co-op</h2>
   </header>
 
   <main>
@@ -19,14 +19,28 @@
       </p>
     </section>
 
-    <section id="freeform-text">
-      <p>
-        <!-- Freeform text can be added in this p element-->
+  <section id="freeform-text">
+  <pre>
+  <b>Quick links</b>
+    📋 <a href="https://forms.gle/G6VB3uc1KUa54ht39">Registration form</a> (resubmit if your <b>cosmoshub-4</b> or <b>provider</b> key changes!)
+    📅 <a href="https://github.com/cosmos/testnets/blob/master/interchain-security/SCHEDULE.md">Schedule</a>
 
-        <!-- Insert text above this comment -->
-      </p>
-    </section>
+  <b>How does TIP work?</b>
+  Each period, we evaluate the following criteria:
+    ✅ <b>Criteria 1:</b> Be an active mainnet validator. Submit proof via our Registration form.
+    ✅ <b>Criteria 2.1:</b> Validate all available Top N consumer chains secured by the Cosmos Hub (Neutron and Stride) with > 50% uptime.
+    ✅ <b>Criteria 2.2:</b> Use assigned consumer keys for all available Top N consumer chains (i.e., do not reuse your Hub key).
+    ✅ <b>Criteria 3:</b> Run a testnet infrastructure setup that closely mimics mainnet.
 
+  If you meet these three criteria (most testnet validators do), you can participate in testnet events and earn points. 
+  At the end of each period, we'll translate those points into USDC and pay you for your testnet work! 
+
+  <b>Get in touch!</b>
+    💻 <b>@lexamichaelides</b> on Discord or Telegram for day-to-day questions. 
+    ✉️ <b>project.cosmos@hypha.coop</b> for submitting logs or issues.
+  </pre>
+  </section>
+  
     <section id="metadata">
         <ul id="metadata-list">
           <!-- Metadata items will be added here dynamically -->
@@ -37,7 +51,7 @@
       </section>     
 
     <section id="controls">
-      <label for="month-selector">select a month:</label>
+      <label for="month-selector">Select TIP Period:</label>
       <select id="month-selector">
         <!-- Options will be added dynamically -->
       </select>
@@ -55,10 +69,18 @@
         </tbody>
       </table>
     </section>
+
+  <section id="disclaimer-text">
+    <pre>
+      If you think we've made a mistake or need to notify us of a planned disruption in your testnet participation, email us at <b>project.cosmos@hypha.coop</b> and we may be able to make an exception.
+
+      Exceptions are up to the discretion of the testnet coordinators. Once a period is completed and payments have been made, there will be no changes made retroactively.
+    </pre>
+  </section>
   </main>
 
   <footer>
-    <p>Hypha Does Cosmos</p>
+    <p>@HyphaDoesCosmos</p>
   </footer>
 
   <script src="assets/script.js"></script>
