@@ -71,7 +71,10 @@ async function loadCSV(file) {
           metadataList.appendChild(li);
         }
       });
-  
+
+        // Clear existing event info
+        eventInfo.innerHTML = '';
+
         // Format headers (second row) and add to the metadata list, skipping the first two cells
         secondRow.slice(2).forEach(cell => {
             if (cell.trim()) {
