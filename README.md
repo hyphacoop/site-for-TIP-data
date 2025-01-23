@@ -10,8 +10,14 @@ This is a basic website designed to display TIP data from the weekly testnet eve
 
 - **Dynamic Banner**: displays announcements from `announcements.json`. If the `banner` value is empty, the banner will not be shown.
 - **Dynamic Dropdown**: populates a dropdown menu with available CSV files listed in `files.json`.
+  - Filename expected is `month_year.csv`
+  - Filename will be used to generate the dropdown text in the following format `Month YEAR`
 - **CSV Parsing**: reads and displays CSV data in a table format.
 - **Metadata Display**: extracts and displays important metadata from the CSV (e.g., last updated information, headers with full descriptions).
+  - The two first rows of the table are extracted and appended to a list above the table
+  - First row contains the date for the last update and information regarding jailing and bonuses
+  - Second row takes the week's task and creates a list with that information
+  - Information following the `-` is removed from the table to keep the columns small and table clean
 - **CSV Parsing**: handles special characters, quoted fields, and multi-line CSV entries.
 
 ---
