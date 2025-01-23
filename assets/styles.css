@@ -79,6 +79,11 @@ body {
     text-overflow: ellipsis;
     white-space: word-wrap;
   }
+
+  table tr td:not(:first-child),
+  table tr th:not(:first-child) {
+    max-width: 100px;
+  }
   
   #scores-table th {
     background-color: #e0e0e0;
