@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Validator Scores</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header>
+    <h1>validator scores</h1>
+    <h2>data from the weekly testnet events</h2>
+  </header>
+
+  <main>
+    <section id="banner">
+      <p id="banner-content">
+        <!-- Banner content is loaded from announcements.json -->
+      </p>
+    </section>
+
+    <section id="metadata">
+        <ul id="metadata-list">
+          <!-- Metadata items will be added here dynamically -->
+        </ul>
+        <ul id="event-info">
+          <!-- Event info will be added here dynamically -->
+        </ul>
+      </section>     
+
+    <section id="controls">
+      <label for="month-selector">select a month:</label>
+      <select id="month-selector">
+        <!-- Options will be added dynamically -->
+      </select>
+    </section>
+
+    <section id="table-container">
+      <table id="scores-table">
+        <thead>
+          <tr id="table-headers">
+            <!-- Dynamic headers will be added here -->
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Dynamic rows will be added here -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>Hypha Does Cosmos</p>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
