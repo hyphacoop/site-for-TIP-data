@@ -83,9 +83,8 @@ http-server .
 
 #### To Do
 
-- Add a GitHub Action to automate the generate_file_json.sh script on new CSV uploads.
-- Set up GitHub Pages to serve the site directly from the repository.
 - Improve styles and layout
+- Optimize the site for mobile screen and overall responsiveness  
 
 #### Notes
 
