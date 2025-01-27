@@ -31,6 +31,10 @@ body {
     color: #777777;
   }
 
+  .purple {
+    color: #9900FC;
+  }
+
   #metadata {
     background-color: #e0e0e0;
     padding: 1rem;
