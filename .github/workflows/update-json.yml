@@ -26,7 +26,13 @@ jobs:
         chmod +x ./generate_file_json.sh
         ./generate_file_json.sh
 
-    # Step 4: Commit and push changes
+    # Step 4: Check if there are changes
+    - name: Check for changes
+      id: changes
+      run: |
+        git add ./data/files.json
+        git diff --cached --quiet || echo "has_changes=true" >> $GITHUB_ENV
+
     - name: Commit and push changes
       run: |
         git config user.name "github-actions[bot]"
