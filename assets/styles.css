@@ -121,3 +121,18 @@ body {
     margin-top: 2rem;
   }
   
+  #business-contact-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    align-items: flex-start;
+  }
+
+  #business-contact-form #message {
+    max-width: 500px;
+    min-width: 300px;
+  }
+
+  input, textarea {
+    margin-bottom: 1rem;
+  }
