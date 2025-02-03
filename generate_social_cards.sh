@@ -2,9 +2,11 @@
 
 # Paths
 DATA_DIR="data"
-OUTPUT_DIR="validators"
-FONT="assets/fonts/Symbola.ttf" # Monospace font for text
+OUTPUT_DIR="social"
 TEMPLATE="templates/validator_template.html"
+
+# Node.js script for rendering
+RENDER_SCRIPT="render_images.js"
 
 # Determine the current month and year
 current_month=$(date +%B | tr '[:upper:]' '[:lower:]') # Convert to lowercase
@@ -36,6 +38,9 @@ date_range="$start_date - $end_date"
 # Initialize validator counter
 validator_count=0
 
+# Inform users 
+echo "Generating social cards"
+
 # Read the CSV file (skipping the header row)
 while IFS=',' read -r -a columns; do
   # Skip empty moniker lines
@@ -51,7 +56,7 @@ while IFS=',' read -r -a columns; do
   # Handle additional dynamic columns
   rest_columns=("${columns[@]:3}")
 
-  # Clean up moniker for filenames (allow emojis but remove invalid characters)
+  # Clean up validator moniker to create folder
   folder_name=$(echo "$moniker" | tr ' ' '_' | tr -cd '[:alnum:]_ -')
 
   # Create a folder for the validator
@@ -61,17 +66,6 @@ while IFS=',' read -r -a columns; do
   # File paths
   output_image="$validator_dir/social-card.webp"
   output_html="$validator_dir/index.html"
-
-  # Generate the social card with updated dates
-  convert -size 1200x630 xc:white \
-    -gravity NorthWest \
-    -font "$FONT" -pointsize 48 -fill black \
-    -annotate +50+50 "$moniker" \
-    -font "$FONT" -pointsize 36 \
-    -annotate +50+150 "Date Range: $date_range" \
-    -annotate +50+250 "Total Points: $total_points" \
-    -annotate +50+350 "Perfection Bonus: $perfection_bonus" \
-    "$output_image"
 
   # Escape special characters for the HTML template
   escaped_moniker=$(printf '%s' "$moniker" | sed -e 's/[&/\]/\\&/g')
@@ -89,10 +83,13 @@ while IFS=',' read -r -a columns; do
   # Write the HTML file
   echo "$html_content" > "$output_html"
 
+  # Render the HTML to a webp image
+  node "$RENDER_SCRIPT" "$output_html" "$output_image"
+
   # Increment validator counter
   ((validator_count++))
 done < <(tail -n +3 "$csv_file")
 
 # Print concise summary log
 echo "Date Range: $date_range"
-echo "Generated pages and social cards for $validator_count validators."
+echo "Generated pages and social cards for $validator_count participants."
