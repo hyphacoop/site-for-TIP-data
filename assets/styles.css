@@ -31,6 +31,10 @@ body {
     color: #777777;
   }
 
+  .purple {
+    color: #9900FC;
+  }
+
   #metadata {
     background-color: #e0e0e0;
     padding: 1rem;
@@ -60,7 +64,7 @@ body {
   
   #scores-table {
     min-width: 50vw;
-    border-collapse: collapse;
+    border-collapse: separate;
     margin-top: 1rem;
     table-layout: fixed;
     border-spacing: 0;
@@ -83,6 +87,13 @@ body {
   table tr td:not(:first-child),
   table tr th:not(:first-child) {
     max-width: 100px;
+  }
+
+  .validator-table {
+    max-width: 250px;
+  }
+  table.validator-table tr td:not(:first-child) {
+    text-align: center;
   }
 
   
