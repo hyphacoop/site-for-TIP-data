@@ -67,11 +67,6 @@ const fs = require('fs');
         if (link) link.remove();
     });
 
-     // Save the modified HTML to a file
-     const modifiedHtml = await page.evaluate(() => document.documentElement.outerHTML);
-     fs.writeFileSync(modifiedHtmlPath, modifiedHtml, 'utf8');
-     console.log(`Modified HTML saved to: ${modifiedHtmlPath}`);
-
     // Set viewport dimensions
     await page.setViewport({ width: 1080, height: 540 });
 
