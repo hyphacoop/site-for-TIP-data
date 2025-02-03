@@ -8,16 +8,15 @@ TEMPLATE="templates/validator_template.html"
 # Node.js script for rendering
 RENDER_SCRIPT="render_images.js"
 
-# Determine the current month and year
-current_month=$(date +%B | tr '[:upper:]' '[:lower:]') # Convert to lowercase
-current_year=$(date +%Y)
+# Extract the correct filename from files.json
+csv_file=$(jq -r '.[0].file' "$DATA_DIR/files.json")  # Extract the "file" key from the first object
 
-# Construct the filename
-csv_file="$DATA_DIR/${current_month}_${current_year}.csv"
+# Construct the full path
+csv_file_path="$DATA_DIR/$csv_file"
 
 # Check if the CSV file exists
-if [ ! -f "$csv_file" ]; then
-  echo "Error: CSV file not found: $csv_file"
+if [ ! -f "$csv_file_path" ]; then
+  echo "Error: CSV file not found: $csv_file_path"
   exit 1
 fi
 
@@ -31,8 +30,8 @@ fi
 mkdir -p "$OUTPUT_DIR"
 
 # Extract the start and end dates
-start_date=$(head -n 2 "$csv_file" | tail -n 1 | cut -d',' -f4 | cut -d'-' -f1 | xargs)
-end_date=$(head -n 2 "$csv_file" | tail -n 1 | awk -F',' '{for(i=NF;i>0;i--) if($i!="") {print $i; break}}' | cut -d'-' -f1 | xargs)
+start_date=$(head -n 2 "$csv_file_path" | tail -n 1 | cut -d',' -f4 | cut -d'-' -f1 | xargs)
+end_date=$(head -n 2 "$csv_file_path" | tail -n 1 | awk -F',' '{for(i=NF;i>0;i--) if($i!="") {print $i; break}}' | cut -d'-' -f1 | sed 's/([^)]*)//g' | xargs)
 date_range="$start_date - $end_date"
 
 # Initialize validator counter
@@ -88,7 +87,7 @@ while IFS=',' read -r -a columns; do
 
   # Increment validator counter
   ((validator_count++))
-done < <(tail -n +3 "$csv_file")
+done < <(tail -n +3 "$csv_file_path")
 
 # Print concise summary log
 echo "Date Range: $date_range"
