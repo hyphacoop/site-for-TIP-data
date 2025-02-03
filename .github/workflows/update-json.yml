@@ -1,4 +1,4 @@
-name: Update Files JSON
+name: Update JSON and generate social cards
 
 on:
   push:
@@ -20,11 +20,18 @@ jobs:
         sudo apt-get update
         sudo apt-get install -y bash
 
-    # Step 3: Run the bash script
+    # Step 3: install puppeteer with npm 
+    - name: Install puppeteer
+      run: |
+        npm install
+
+    # Step 4: Run the bash scripts
     - name: Generate files.json
       run: |
         chmod +x ./generate_file_json.sh
         ./generate_file_json.sh
+        chmod +x ./generate_social_cards.sh
+        ./generate_social_cards.sh
 
     # Step 4: Commit and push changes
     - name: Commit and push changes
@@ -32,6 +39,7 @@ jobs:
         git config user.name "github-actions[bot]"
         git config user.email "github-actions[bot]@users.noreply.github.com"
         git add ./data/files.json
+        git add ./social/*
         git commit -m "Update files.json after new CSV upload"
         git push
       env:
