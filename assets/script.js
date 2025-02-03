@@ -146,24 +146,24 @@ async function loadCSV(file) {
 
   // Generate link for clipboard
   function generateLinkForClipboard(moniker, tdElement) {
-    const baseUrl = window.location.origin; // Get the current origin (e.g., https://example.com)
-    const validatorUrl = `${baseUrl}/validators/${moniker}/`;
+    const baseUrl = window.location.origin;
+    const validatorUrl = `${baseUrl}/social/${moniker}/`;
 
     // Copy the URL to the clipboard
     navigator.clipboard.writeText(validatorUrl)
       .then(() => {
         // Add visual feedback by changing the border color of the entire <td>
-        tdElement.style.border = '2px solid #4CAF50'; // Green border for success
+        tdElement.style.border = '1px solid #4CAF50'; // Green border for success
         setTimeout(() => {
           tdElement.style.border = ''; // Reset the border after 1 second
-        }, 1000);
+        }, 800);
       })
       .catch(() => {
         // Add visual feedback for failure
-        tdElement.style.border = '2px solid #FF0000'; // Red border for failure
+        tdElement.style.border = '1px solid #FF0000'; // Red border for failure
         setTimeout(() => {
           tdElement.style.border = ''; // Reset the border after 1 second
-        }, 1000);
+        }, 800);
       });
   }
   
