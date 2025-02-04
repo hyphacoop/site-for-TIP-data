@@ -4,11 +4,6 @@ on:
   push:
     branches:
       - main # Trigger on any push to the main branch
-    paths-ignore: # Ignore CSV file updates
-      - "data/*.csv"
-    paths:
-      - "data/files.json"  # Ensure it triggers on files.json updates
-
 jobs:
   deploy:
     runs-on: ubuntu-latest
