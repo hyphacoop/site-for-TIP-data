@@ -5,6 +5,7 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
+    max-width: 1280px;
   }
 
   header {
@@ -137,7 +138,6 @@ nav a:hover {
 #exception-form {
   display: flex;
   flex-direction: column;
-  margin-top: 2rem;
   align-items: flex-start;
 }
 
