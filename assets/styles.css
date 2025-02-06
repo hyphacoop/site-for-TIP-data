@@ -101,4 +101,52 @@ body {
     background-color: #eeeeee;
     margin-top: 2rem;
   }
-  
+
+/* Navigation */
+nav {
+  position: fixed;
+  padding: 10px;
+  padding-right: 1rem;
+  background-color: #f4f4f4;
+  right: 0;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+nav li {
+  display: inline;
+}
+nav a {
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a.active {
+  color: #9900FC; 
+  text-decoration: underline;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+
+
+/* Form styles */
+#business-contact-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  align-items: flex-start;
+}
+
+#business-contact-form #message {
+  max-width: 500px;
+  min-width: 300px;
+}
+
+input,
+textarea {
+  margin-bottom: 1rem;
+}
