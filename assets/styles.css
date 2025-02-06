@@ -134,14 +134,19 @@ nav a:hover {
 
 
 /* Form styles */
-#business-contact-form {
+#exception-form {
   display: flex;
   flex-direction: column;
   margin-top: 2rem;
   align-items: flex-start;
 }
 
-#business-contact-form #message {
+#exception-form #message {
+  max-width: 500px;
+  min-width: 300px;
+}
+
+#exception-form #evidence {
   max-width: 500px;
   min-width: 300px;
 }

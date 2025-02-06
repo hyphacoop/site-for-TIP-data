@@ -69,22 +69,28 @@
       </p>
     </section>
 
-    <section id="contact-form">
+    <section id="exception-form">
       <h3>Request an exception</h3>
       <p>Need an exception? Use the form below to reach out, and we'll get back to you soon.</p>
-      <form id="business-contact-form" 
+      <form id="exception-form" 
         action="https://formspree.io/f/mgvokgzb"
-        method="POST"
-      >
-        <label for="name">Your Name:</label>
+        method="POST">
+        <label for="name">Your name:</label>
         <input type="text" id="name" name="name" required>
         
-        <label for="email">Your Email:</label>
+        <label for="validator">Validator moniker:</label>
+        <input type="text" id="validator" name="validator" required>
+
+        <label for="email">Your email:</label>
         <input type="email" id="email" name="email" required>
         
-        <label for="message">How can we help?</label>
+        <label for="message">Please explain what exception you are requesting:</label>
         <textarea id="message" name="message" rows="5" required></textarea>
         
+        <label for="evidence">Paste any supporting logs here:</label>
+        <textarea id="evidence" name="message" rows="5" required></textarea>
+
+
         <button type="submit">Submit</button>
       </form>
     </section>
