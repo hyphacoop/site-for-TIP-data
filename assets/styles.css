@@ -21,7 +21,7 @@
 
 /* Global styles */
 body {
-    font-family: monospace;
+    font-family: 'Work Sans', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #ffffff;
@@ -103,6 +103,10 @@ body {
   #banner, #metadata, #freeform-text {
     max-width: 64rem;
   }
+
+  #metadata, #controls, #table-container {
+    font-family: monospace;
+  }
   
   main {
     padding: 0 4rem;
@@ -165,6 +169,7 @@ body {
     padding: 1rem;
     background-color: #eeeeee;
     margin-top: 2rem;
+    width: 100vw;
 }
 
 /* Form styles */
