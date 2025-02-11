@@ -26,10 +26,10 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
-    max-width: 1200px;
+    max-width: 1280px;
     box-sizing: border-box;
     width: 100vw;
-  }
+}
 
 
   @media screen and (min-width: 65em) {
@@ -160,4 +160,26 @@ body {
     padding: 1rem;
     background-color: #eeeeee;
     margin-top: 2rem;
-  }
+}
+
+/* Form styles */
+#exception-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#exception-form #message {
+  max-width: 500px;
+  min-width: 300px;
+}
+
+#exception-form #evidence {
+  max-width: 500px;
+  min-width: 300px;
+}
+
+input,
+textarea {
+  margin-bottom: 1rem;
+}
