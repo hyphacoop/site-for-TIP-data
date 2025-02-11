@@ -39,6 +39,12 @@ body {
         background-position: top right;
         background-size: 30%;
     }
+    .canopy {
+      background-image: url(./image/new_canopy.webp);
+      background-repeat: no-repeat;
+      background-position: top right;
+      background-size: 30%;
+    }
 }
 
   header {
