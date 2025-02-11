@@ -1,3 +1,24 @@
+/* Hypha font styles */
+/* Normal font */
+@font-face {
+  font-family: 'Work Sans';
+  src: url('fonts/WorkSans-VariableFont_wght.woff2') format('woff2');
+  font-style: normal;
+  font-display: swap;   /* Adjust to your preferred font-display strategy */
+}
+
+/* Italic font */
+@font-face {
+  font-family: 'Work Sans';
+  src: url('fonts/WorkSans-Italic-VariableFont_wght.woff2') format('woff2');
+  font-style: italic;
+  font-display: swap;
+}
+
+.purple {
+  color: #9900FC;
+}
+
 /* Global styles */
 body {
     font-family: monospace;
@@ -6,30 +27,63 @@ body {
     background-color: #f4f4f4;
     color: #333;
     max-width: 1280px;
-  }
+    box-sizing: border-box;
+    width: 100vw;
+}
+
+
+  @media screen and (min-width: 65em) {
+    .roots-bg {
+        background-image: url(./image/trollius.webp);
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-size: 30%;
+    }
+}
 
   header {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: fit-content;
   }
-  
-  header {
-    padding: 1rem;
-    padding-left: 2rem;
-    text-align: left;
-  }
-  
-  header h1 {
-    color: #9900FC;
-    margin: 0;
-    text-transform: lowercase;
-    font-size: 3rem;
+
+  header h1, header h2, header h3 {
+    font-family: 'Work Sans', sans-serif;
   }
 
   header h2 {
-    color: #777777;
+    color: #9900FC;
+    margin: 0;
+    margin-top: 4rem;
+    text-transform: lowercase;
+    font-size: 3rem;
+    font-weight: 400;
+  }
+
+  header h3 {
+    color: #333;
+    margin-bottom: 4rem;
+    max-width: 50vw;
+    font-size: 2.25rem;
+    font-weight: 400;
+  }
+
+  .mw-text {
+    max-width: 64rem;
+  }
+
+  @media (min-width: 1024px) {
+    header h2, header h3 {
+      max-width: 80%;
+    }
+    header h2 {
+      margin-top: 8rem;
+      font-size: 5rem;
+    }
+    header h3 {
+      max-width: 30em;
+      margin-bottom: 10rem;
+    }
   }
 
   #metadata {
@@ -40,9 +94,13 @@ body {
   #freeform-text {
     margin-bottom: 2rem;
   }
+
+  #banner, #metadata, #freeform-text {
+    max-width: 64rem;
+  }
   
   main {
-    padding: 2rem;
+    padding: 0 4rem;
   }
   
   #banner {
@@ -50,7 +108,8 @@ body {
     background-color: #9900FC;
     border-left: 4px dotted #ffffff;;
     font-size: 1.125rem;
-    padding: 1rem;
+    padding: 1rem 2rem;
+    margin-top: 8rem;
     margin-bottom: 2rem;
     display:none;
   }
@@ -101,38 +160,7 @@ body {
     padding: 1rem;
     background-color: #eeeeee;
     margin-top: 2rem;
-  }
-
-/* Navigation */
-nav {
-  position: fixed;
-  padding: 10px;
-  padding-right: 1rem;
-  background-color: #f4f4f4;
-  right: 0;
 }
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  gap: 20px;
-}
-nav li {
-  display: inline;
-}
-nav a {
-  text-decoration: none;
-  font-weight: bold;
-}
-nav a.active {
-  color: #9900FC; 
-  text-decoration: underline;
-}
-nav a:hover {
-  text-decoration: underline;
-}
-
 
 /* Form styles */
 #exception-form {

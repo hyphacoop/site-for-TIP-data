@@ -1,12 +1,28 @@
 class CustomNav extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
-            <nav>
+        <div class="container">
+            <a href="https://hypha.coop" class="title-link">
+                <h1 class="title">
+                <span class="mr2 purple uppercase">Hypha</span>
+                <span class="gray regular">Worker Co-operative</span>
+                </h1>
+            </a>
+             <nav>
                 <ul>
-                    <li><a href="/index.html">home</a></li>
-                    <li><a href="/about-the-program/">about the program</a></li>
+                    
+                    <!-- Insert page links in the nav below --!>
+
+                    <!--
+                        <li><a href="/index.html">home</a></li>
+                        <li><a href="/about-the-program/">about the program</a></li>
+                    --!>
+
+                    <!-- Page links in navigation are inserted as li elements above this line --!>
+                
                 </ul>
             </nav>
+        </div>
         `;
 
         // Highlight active link
