@@ -21,7 +21,15 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
-  }
+
+  @media screen and (min-width: 65em) {
+    .roots-bg {
+        background-image: url(./image/trollius.webp);
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-size: 30%;
+    }
+}
 
   header {
     display: flex;
