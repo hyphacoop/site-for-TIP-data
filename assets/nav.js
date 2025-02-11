@@ -13,10 +13,10 @@ class CustomNav extends HTMLElement {
                     
                     <!-- Insert page links in the nav below --!>
 
-                    <!--
-                        <li><a href="/index.html">home</a></li>
+                    
+                        <li><a href="/">home</a></li>
                         <li><a href="/about-the-program/">about the program</a></li>
-                    --!>
+                    
 
                     <!-- Page links in navigation are inserted as li elements above this line --!>
                 
