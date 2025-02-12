@@ -15,6 +15,7 @@ class CustomNav extends HTMLElement {
 
                     
                         <li><a href="/">Home</a></li>
+                        <li><a href="https://hypha.coop">About Hypha</a></li>
                         <li><a href="/about-the-program/">About the program</a></li>
                     
 
