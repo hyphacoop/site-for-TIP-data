@@ -5,7 +5,7 @@ class CustomNav extends HTMLElement {
             <a href="https://testnets.hypha.coop" class="title-link">
                 <h1 class="title">
                 <span class="mr2 purple uppercase">Hypha</span>
-                <span class="gray regular">Worker Co-operative</span>
+                <span class="gray regular">Testnets</span>
                 </h1>
             </a>
              <nav>
