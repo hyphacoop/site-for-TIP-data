@@ -6,6 +6,10 @@ Site that displays TIP data
 
 This is a basic website designed to display TIP data from the weekly testnet events. It is built using HTML, CSS, and vanilla JavaScript.
 
+## Deployment
+
+We use GitHub Actions for deployment via GitHub Pages to the [testnets.hypha.coop](https://testnets.hypha.coop) domain. The staging branch is deployed to Netlify at [hubtestnets.netlify.app](https://hubtestnets.netlify.app/).  
+
 ### Key Features
 
 - **Dynamic Banner**: displays announcements from `announcements.json`. If the `banner` value is empty, the banner will not be shown.
