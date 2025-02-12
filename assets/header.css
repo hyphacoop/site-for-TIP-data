@@ -9,7 +9,6 @@
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
   }
   
 
@@ -49,14 +48,16 @@
     font-weight: 500;
   }
 
-
 /* Navigation */
+nav {
+    padding-left: 1rem;
+    margin-left: 1rem;
+}
 nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 20px;
     margin-top: 1.5rem;
 }
 nav li {
@@ -68,6 +69,7 @@ nav a {
     color: #555;
     font-size: 1rem;
     transition: color .15s ease-in;
+    padding: 0 1rem;
 }
 nav a.active {
     color: #9900FC; 
