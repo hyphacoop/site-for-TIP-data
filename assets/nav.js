@@ -2,7 +2,7 @@ class CustomNav extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
         <div class="container">
-            <a href="https://testnets.hypha.coop" class="title-link">
+            <a href="/" class="title-link">
                 <h1 class="title">
                 <span class="mr2 purple uppercase">Hypha</span>
                 <span class="gray regular">Testnets</span>
