@@ -79,7 +79,23 @@ nav a:hover {
     text-decoration: underline;
     color: #9900FC; 
 }
-  
+/* Mobile nav */
+@media (min-width: 620px) {
+  nav {
+      padding-left: 1rem;
+      margin-left: 1rem;
+  }
+  nav ul {
+      flex-direction: row;
+  }
+  nav li {
+      margin-top: 0;
+  }
+  nav a {
+    padding: 0 1rem;
+  }
+}
+
 @media (min-width: 1024px) {
     .title {
         font-size: 1.5rem; 
