@@ -68,7 +68,7 @@ body {
   header h3 {
     color: #333;
     margin-bottom: 4rem;
-    max-width: 50vw;
+    max-width: 70vw;
     font-size: 2.25rem;
     font-weight: 400;
   }
@@ -81,6 +81,9 @@ body {
   #metadata {
     background-color: #e0e0e0;
     padding: 1rem;
+  }
+  #metadata ul {
+    padding-left: 0.5rem;
   }
 
   #freeform-text {
@@ -195,7 +198,7 @@ textarea {
     max-width: 30em;
     margin-bottom: 10rem;
   }
-  #metadata, #banner {
+  #metadata {
     width: 80%;
   }
 }
