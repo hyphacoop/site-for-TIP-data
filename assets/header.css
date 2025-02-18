@@ -78,6 +78,10 @@ nav a:hover {
     text-decoration: underline;
     color: #9900FC; 
 }
+
+.nav-link-img {
+  max-height: 1rem; 
+}
 /* Mobile nav */
 @media (min-width: 620px) {
   nav {

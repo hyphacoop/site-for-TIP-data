@@ -16,7 +16,7 @@ class CustomNav extends HTMLElement {
                     
                         <li><a href="/">Home</a></li>
                         <li><a href="/about-the-program/">About the program</a></li>
-                        <li><a target="_blank" href="https://hypha.coop">About Hypha 🗗</a></li>
+                        <li><a target="_blank" href="https://hypha.coop">About Hypha <img class="nav-link-img" src="./assets/image/overlap-character.png" alt="Overlap Unicode Character (🗗/U+1F5D7)"></a></li>
                     
 
                     <!-- Page links in navigation are inserted as li elements above this line --!>
