@@ -80,8 +80,29 @@ nav a:hover {
 }
 
 .nav-link-img {
-  max-height: 1rem; 
+  max-height: 1rem;
 }
+/* new window icon hover effect */
+.nav-link:hover .nav-link-img {
+  filter: brightness(0) saturate(100%) invert(12%) sepia(96%) 
+          saturate(7102%) hue-rotate(282deg) brightness(97%) contrast(108%);
+}
+.nav-link-wrapper {
+  position: relative;
+  display: inline-block;
+}
+/* arrow on hover */
+.nav-link:hover .nav-link-wrapper::after {
+  content: "↗";
+  position: absolute;
+  color: #FFF;
+  font-size: 1rem; 
+  bottom: 50%;         
+  right: 50%;
+  transform: translate(50%, 50%);        
+  z-index: 1; 
+}
+
 /* Mobile nav */
 @media (min-width: 620px) {
   nav {
