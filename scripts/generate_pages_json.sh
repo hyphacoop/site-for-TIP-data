@@ -1,9 +1,7 @@
 #!/bin/bash
 
-# filepath: /home/v/Hypha/site-for-TIP-data/generate-pages.sh
-
-BASE_DIR="site" # Adjust the base directory as needed
-OUTPUT_FILE="assets/pages.json"
+BASE_DIR="site" 
+OUTPUT_FILE="site/assets/pages.json"
 
 # Function to scan directories and generate JSON
 scan_directories() {
@@ -16,7 +14,7 @@ scan_directories() {
             local index_path="$file/index.html"
             if [ -f "$index_path" ]; then
                 local title=$(basename "$file" | sed -e 's/-/ /g' -e 's/\b\(.\)/\u\1/g')
-                local url="$base_url/$(basename "$file")/index.html"
+                local url="$base_url/$(basename "$file")/"
                 pages+=("{\"title\": \"$title\", \"url\": \"$url\"}")
             fi
             local sub_pages=$(scan_directories "$file" "$base_url/$(basename "$file")")
@@ -31,4 +29,4 @@ scan_directories() {
 
 # Generate pages.json
 scan_directories "$BASE_DIR" "" > "$OUTPUT_FILE"
-echo "Pages generated: $(cat "$OUTPUT_FILE")"
+echo "Index generated: $(cat "$OUTPUT_FILE")"
