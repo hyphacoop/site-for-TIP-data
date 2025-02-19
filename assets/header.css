@@ -40,10 +40,15 @@
   
   .gray {
     color: #666; 
-    font-weight: 400;
+  }
+  .mid-gray {
+    color: #555;
   }
 
   .regular {
+    font-weight: 400;
+  }
+  .medium { 
     font-weight: 500;
   }
 
