@@ -5,7 +5,7 @@ class CustomNav extends HTMLElement {
             <a href="/" class="title-link">
                 <h1 class="title">
                 <span class="mr2 purple uppercase">Hypha</span>
-                <span class="gray regular">Testnets</span>
+                <span class="gray">Testnets</span>
                 </h1>
             </a>
              <nav>
