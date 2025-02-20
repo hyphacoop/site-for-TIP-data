@@ -10,6 +10,13 @@ This is a basic website designed to display TIP data from the weekly testnet eve
 
 We use GitHub Actions for deployment via GitHub Pages to the [testnets.hypha.coop](https://testnets.hypha.coop) domain. The staging branch is deployed to Netlify at [hubtestnets.netlify.app](https://hubtestnets.netlify.app/).  
 
+## Project structure
+
+- `scripts/` contains the code used for automating changes for the TIP data and the page index
+- `site/` holds all the code and assets for the deployed web site
+- `template/` has the page template to be used for creating new pages 
+- `.github/workflows` is where the github actions for building and deploying the site 
+
 ## Creating new pages
 
 ### From template  
