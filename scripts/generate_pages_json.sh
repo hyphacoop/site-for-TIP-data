@@ -13,7 +13,7 @@ scan_directories() {
         if [ -d "$file" ]; then
             local index_path="$file/index.html"
             if [ -f "$index_path" ]; then
-                local title=$(basename "$file" | sed -e 's/-/ /g' -e 's/\b\(.\)/\u\1/g')
+                local title=$(basename "$file" | sed -e 's/-/ /g' | awk '{for(i=1;i<=NF;i++) $i=toupper(substr($i,1,1)) substr($i,2)}1')
                 local url="$base_url/$(basename "$file")/"
                 pages+=("{\"title\": \"$title\", \"url\": \"$url\"}")
             fi
