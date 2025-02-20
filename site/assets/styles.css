@@ -35,13 +35,13 @@ body {
 
   @media screen and (min-width: 65em) {
     .roots-bg {
-        background-image: url(./image/trollius.webp);
+        background-image: url(./images/trollius.webp);
         background-repeat: no-repeat;
         background-position: top right;
         background-size: 30%;
     }
     .canopy {
-      background-image: url(./image/new_canopy.webp);
+      background-image: url(./images/new_canopy.webp);
       background-repeat: no-repeat;
       background-position: top right;
       background-size: 30%;
@@ -91,7 +91,7 @@ body {
     margin-bottom: 2rem;
   }
 
-  #banner, #metadata, #freeform-text {
+  main section {
     max-width: 64rem;
   }
 
