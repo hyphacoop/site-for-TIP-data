@@ -28,7 +28,26 @@ The elements in `{{ }}` needs to be populated by replacing these placeholders wi
 - {{pageContent}}
 - {{pageContentContinued}}
 
-`pageSlug` should match the name of the folder that was just created. The social card image that will be displayed when sharing the link to this new page on social media should be placed in the same folder and named `share-card.png`
+`pageSlug` should match the name of the folder that was just created. The social card image that will be displayed when sharing the link to this new page on social media should be placed in the same folder and named `share-card.png`. Sharte cards are created from screenshots of the page. Get in touch with Vincent if you need help with creating the share card. 
+
+We use distinct background images for each pages. The template currently reuses the background-image found on the home page by using the class `roots-bg`. This image is set on the body element with CSS. In `site/assets/styles.css`, on L36:
+
+```css
+  @media screen and (min-width: 65em) {
+    .roots-bg {
+        background-image: url(./images/trollius.webp);
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-size: 30%;
+    }
+    .canopy {
+      background-image: url(./images/new_canopy.webp);
+      background-repeat: no-repeat;
+      background-position: top right;
+      background-size: 30%;
+    }
+}
+```
 
 You can run the script titled `generate_page_json.sh` to update the navigation locally but this is optional since this script runs on build.
 When testing locally, you will need to run the script from the root directory:
