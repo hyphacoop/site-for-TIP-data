@@ -104,9 +104,9 @@ body {
   }
   
   #banner {
-    color: #ffffff;
-    background-color: #9900FC;
-    border-left: 4px dotted #ffffff;;
+    color: #9900FC;
+    background-color: #ffffff;
+    border: 4px dotted #9900FC;;
     font-size: 1.125rem;
     padding: 1rem 2rem;
     padding-right: 2.125rem;

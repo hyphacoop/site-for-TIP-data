@@ -26,7 +26,7 @@ The elements in `{{ }}` needs to be populated by replacing these placeholders wi
 - {{mainHeading}}
 - {{subHeading}}
 - {{pageContent}}
-- {{pageContentContinued}}
+- {{pageContentContinued}} (optional)
 
 `pageSlug` should match the name of the folder that was just created. The social card image that will be displayed when sharing the link to this new page on social media should be placed in the same folder and named `share-card.png`. Sharte cards are created from screenshots of the page. Get in touch with Vincent if you need help with creating the share card. 
 
