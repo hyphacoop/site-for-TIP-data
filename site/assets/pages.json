@@ -1,6 +1,10 @@
 [
   {
-    "title": "About The Program",
+    "title": "auout the program",
     "url": "/about-the-program/"
+  },
+  {
+    "title": "registration",
+    "url": "/registration/"
   }
 ]
