@@ -24,7 +24,7 @@ jobs:
     - name: Check for changes
       id: changes
       run: |
-        git add ./site/data/pages.json
+        git add ./site/assets/pages.json
         git diff --cached --quiet || echo "has_changes=true" >> $GITHUB_ENV
 
     # Step 4: Commit and push changes (if any)
