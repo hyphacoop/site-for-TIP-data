@@ -115,6 +115,15 @@ body {
     display:none;
     width: fit-content;
   }
+
+  #banner a {
+    color: #9900FC;
+    text-decoration: none;
+  }
+
+  #banner.link-hover:hover {
+    border: 4px solid #9900FC;
+  }
   
   #controls {
     margin: 1rem 0;
