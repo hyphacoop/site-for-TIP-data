@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define the data folder and output file
-DATA_FOLDER="./data"
+DATA_FOLDER="./site/data"
 OUTPUT_FILE="$DATA_FOLDER/files.json"
 
 # Start the JSON array

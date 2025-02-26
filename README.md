@@ -10,6 +10,56 @@ This is a basic website designed to display TIP data from the weekly testnet eve
 
 We use GitHub Actions for deployment via GitHub Pages to the [testnets.hypha.coop](https://testnets.hypha.coop) domain. The staging branch is deployed to Netlify at [hubtestnets.netlify.app](https://hubtestnets.netlify.app/).  
 
+## Project structure
+
+- `scripts/` contains the code used for automating changes for the TIP data and the page index
+- `site/` holds all the code and assets for the deployed web site
+- `template/` has the page template to be used for creating new pages 
+- `.github/workflows` is where the github actions for building and deploying the site 
+
+## Creating new pages
+
+### From template  
+
+- Create a new folder in `site` and name it to match the new page title.
+- Copy `page-template.html` from `template` folder to the newly created folder.
+- In this new folder, rename `page-template.html` to `index.html`
+- Fill the template with your content.
+
+The elements in `{{ }}` needs to be populated by replacing these placeholders with the desired content:
+- {{pageTitle}}
+- {{pageDescription}}
+- {{pageSlug}}
+- {{mainHeading}}
+- {{subHeading}}
+- {{pageContent}}
+- {{pageContentContinued}} (optional)
+
+`pageSlug` should match the name of the folder that was just created. The social card image that will be displayed when sharing the link to this new page on social media should be placed in the same folder and named `share-card.png`. Sharte cards are created from screenshots of the page. Get in touch with Vincent if you need help with creating the share card. 
+
+We use distinct background images for each pages. The template currently reuses the background-image found on the home page by using the class `roots-bg`. This image is set on the body element with CSS. In `site/assets/styles.css`, on L36:
+
+```css
+  @media screen and (min-width: 65em) {
+    .roots-bg {
+        background-image: url(./images/trollius.webp);
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-size: 30%;
+    }
+    .canopy {
+      background-image: url(./images/new_canopy.webp);
+      background-repeat: no-repeat;
+      background-position: top right;
+      background-size: 30%;
+    }
+}
+```
+
+You can run the script titled `generate_page_json.sh` to update the navigation locally but this is optional since this script runs on build.
+When testing locally, you will need to run the script from the root directory:
+`./scripts/generate_pages_json.sh`
+
 ### Key Features
 
 - **Dynamic Banner**: displays announcements from `announcements.json`. If the `banner` value is empty, the banner will not be shown.
@@ -30,17 +80,17 @@ We use GitHub Actions for deployment via GitHub Pages to the [testnets.hypha.coo
 
 ### Root
 
-- `index.html`: The main HTML file for the site.
-- `assets/styles.css`: Styles for the site.
-- `assets/script.js`: The JavaScript logic for dynamically loading and displaying data.
-- `generate_file_json.sh`: A script to generate `files.json` based on the CSV files in the `/data` directory.
+- `site/index.html`: The main HTML file for the site.
+- `site/assets/styles.css`: Styles for the site.
+- `site/assets/script.js`: The JavaScript logic for dynamically loading and displaying data.
+- `scripts/generate_file_json.sh`: A script to generate `files.json` based on the CSV files in the `/data` directory.
 - `README.md`: Project documentation.
 
 ### Data
 
-- `data/files.json`: Lists available CSV files to populate the dropdown.
-- `data/announcements.json`: Contains the text for the announcement banner.
-- `data/*.csv`: CSV files containing TIP data (e.g., `january_2025.csv`).
+- `site/data/files.json`: Lists available CSV files to populate the dropdown.
+- `site/data/announcements.json`: Contains the text for the announcement banner.
+- `site/data/*.csv`: CSV files containing TIP data (e.g., `january_2025.csv`).
 
 ---
 
@@ -73,7 +123,7 @@ To test the site locally, you need to serve it through a web server:
 
 #### Using Python
 
-`python3 -m http.server 8000`
+`cd site && python3 -m http.server 8000`
 
 - Access the site at: http://localhost:8000
 
@@ -81,7 +131,7 @@ To test the site locally, you need to serve it through a web server:
 
 ```javascript
 npm install -g http-server
-http-server .
+http-server ./site/
 ```
 - Access the site at: http://localhost:8080
 
