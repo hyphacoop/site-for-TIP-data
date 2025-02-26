@@ -196,7 +196,7 @@ textarea {
   margin-bottom: 1rem;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1040px) {
   header h2, header h3 {
     max-width: 80%;
   }
