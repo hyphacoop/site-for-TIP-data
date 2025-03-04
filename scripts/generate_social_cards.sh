@@ -1,12 +1,12 @@
 #!/bin/bash
 
 # Paths
-DATA_DIR="data"
-OUTPUT_DIR="social"
-TEMPLATE="templates/validator_template.html"
+DATA_DIR="site/data"
+OUTPUT_DIR="site/social"
+TEMPLATE="templates/validator-template.html"
 
 # Node.js script for rendering
-RENDER_SCRIPT="render_images.js"
+RENDER_SCRIPT="scripts/render_images.js"
 
 # Extract the correct filename from files.json
 csv_file=$(jq -r '.[0].file' "$DATA_DIR/files.json")  # Extract the "file" key from the first object
@@ -29,10 +29,22 @@ fi
 # Create the output directory
 mkdir -p "$OUTPUT_DIR"
 
-# Extract the start and end dates
-start_date=$(head -n 2 "$csv_file_path" | tail -n 1 | cut -d',' -f4 | cut -d'-' -f1 | xargs)
-end_date=$(head -n 2 "$csv_file_path" | tail -n 1 | awk -F',' '{for(i=NF;i>0;i--) if($i!="") {print $i; break}}' | cut -d'-' -f1 | sed 's/([^)]*)//g' | xargs)
-date_range="$start_date - $end_date"
+# Extract the second row (actual header)
+header=$(sed -n '2p' "$csv_file_path")
+
+# Extract start date from column 5
+start_date=$(echo "$header" | awk -F',' '{print $5}' | sed -E 's/ - .*//g' | sed -E 's/ \([0-9]+\)//g')
+
+# Extract last non-empty column
+end_date=$(echo "$header" | awk -F',' '{for (i=NF; i>0; i--) if ($i != "") {print $i; break}}' | sed -E 's/ - .*//g' | sed -E 's/ \([0-9]+\)//g')
+
+# Ensure values exist
+if [[ -n "$start_date" && -n "$end_date" ]]; then
+  date_range="$start_date - $end_date"
+else
+  echo "Error: Could not determine start or end date."
+  exit 1
+fi
 
 # Initialize validator counter
 validator_count=0
@@ -50,10 +62,18 @@ while IFS=',' read -r -a columns; do
   # Extract the necessary columns
   moniker="${columns[0]}"
   total_points="${columns[1]}"
-  perfection_bonus="${columns[2]}"
+
+  # Convert perfection bonus to 🏆 emojis or "0" if zero
+  if [[ "${columns[3]}" =~ ^[0-9]+$ ]]; then
+    perfection_bonus=$([[ "${columns[3]}" -eq 0 ]] && echo "0" || printf '🏆 %.0s' $(seq 1 "${columns[3]}"))
+  else
+    perfection_bonus="0"
+  fi
+
+  echo "Generating social card for $moniker"
 
   # Handle additional dynamic columns
-  rest_columns=("${columns[@]:3}")
+  rest_columns=("${columns[@]:4}")
 
   # Clean up validator moniker to create folder
   folder_name=$(echo "$moniker" | tr ' ' '_' | tr -cd '[:alnum:]_ -')

@@ -31,6 +31,11 @@ const fs = require('fs');
     // Adjust CSS for better image rendering
     await page.evaluate(() => {
         const bodyElement = document.querySelector('body');
+        
+        // remove nav item
+        const nav = document.querySelector('nav');
+        if (nav) nav.remove();
+
         if (bodyElement) {
             bodyElement.style.overflow = 'clip';
         }
@@ -52,6 +57,18 @@ const fs = require('fs');
         if (h2) { 
             h2.style.fontSize = '2rem';
             h2.style.margin = '0';
+        }
+        const h3 = document.querySelector('h3');
+        if (h3) { 
+            h3.style.fontSize = '2rem';
+            h3.style.margin = '0';
+            h3.style.marginLeft = '1rem';
+            h3.style.fontWeight = 'normal';
+        }
+
+        const header = document.getElementById('page-header');
+        if (header) {
+            header.style.display = 'flex';
         }
         const tableHeaders = document.querySelectorAll('th')
         if (tableHeaders) {

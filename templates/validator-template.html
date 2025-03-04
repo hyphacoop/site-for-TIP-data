@@ -8,7 +8,17 @@
   <meta property="og:description" content="Total Points: {{ total_points }} | Perfection Bonus: {{ perfection_bonus }}">
   <meta property="og:image" content="{{ social_card }}">
   <meta property="og:type" content="website">
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ validator_name }} - Achievements">
+  <meta name="twitter:description" content="Total Points: {{ total_points }} | Perfection Bonus: {{ perfection_bonus }}">
+  <meta name="twitter:image" content="{{ social_card }}">
+  <meta name="twitter:site" content="@HyphaDoesCosmos">
+
   <link rel="stylesheet" href="../../assets/styles.css">
+  <link rel="stylesheet" href="../../assets/header.css">
+
   <style>
     table {
         width: 60%;
@@ -30,11 +40,17 @@
     }
   </style>
 </head>
+
 <body>
+    <header>
+        <script src="../../assets/nav.js" defer></script>
+        <custom-nav></custom-nav>
+    </header>
     <main>
-        <h1>{{ validator_name }}</h1>
-        <h2>{{ date_range }}</h2>
-        
+        <section id="page-header">
+        <h2>{{ validator_name }}</h2>
+        <h3>({{ date_range }})</h3>
+        </section>
         <table class="validator-table">
             <tr>
                 <th>Category</th>

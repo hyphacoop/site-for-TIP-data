@@ -2,15 +2,15 @@
   "name": "site-for-tip-data",
   "version": "1.0.0",
   "description": "Site that displays TIP data",
-  "main": "render_images.js",
+  "main": "scripts/render_images.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "site-for-tip-data"
+    "url": "site-for-TIP-data"
   },
-  "author": "Hypha",
+  "author": "Hypha Worker Co-operative",
   "license": "ISC",
   "dependencies": {
     "puppeteer": "^24.1.1"
