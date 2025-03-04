@@ -30,7 +30,7 @@ jobs:
       run: |
         chmod +x ./scripts/generate_file_json.sh
         ./scripts/generate_file_json.sh
-        chmod +x ./generate_social_cards.sh
+        chmod +x ./scripts/generate_social_cards.sh
         ./scripts/generate_social_cards.sh
 
     # Step 4: Check if there are changes
