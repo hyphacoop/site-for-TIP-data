@@ -16,6 +16,16 @@ async function loadAnnouncements() {
     // Update the banner with the announcement
     if (data.banner) {
       bannerContent.textContent = data.banner;
+      if (data.link) {
+        banner.style.cursor = 'pointer';
+        banner.classList.add('link-hover');
+        banner.onclick = () => {
+          window.location.href = data.link;
+        };
+      } else {
+        banner.style.cursor = 'default';
+        banner.onclick = null;
+      }
       banner.style.display = 'block';
     } else {
       banner.style.display = 'none';

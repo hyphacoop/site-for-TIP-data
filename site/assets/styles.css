@@ -1,0 +1,214 @@
+/* Hypha font styles */
+/* Normal font */
+@font-face {
+  font-family: 'Work Sans';
+  src: url('fonts/WorkSans-VariableFont_wght.woff2') format('woff2');
+  font-style: normal;
+  font-display: swap;   /* Adjust to your preferred font-display strategy */
+}
+
+/* Italic font */
+@font-face {
+  font-family: 'Work Sans';
+  src: url('fonts/WorkSans-Italic-VariableFont_wght.woff2') format('woff2');
+  font-style: italic;
+  font-display: swap;
+}
+
+.purple {
+  color: #9900FC;
+}
+
+/* Global styles */
+body {
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+    max-width: 1280px;
+    box-sizing: border-box;
+    width: 100vw;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+  @media screen and (min-width: 65em) {
+    .roots-bg {
+        background-image: url(./images/trollius.webp);
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-size: 30%;
+    }
+    .canopy {
+      background-image: url(./images/new_canopy.webp);
+      background-repeat: no-repeat;
+      background-position: top right;
+      background-size: 30%;
+    }
+}
+
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  header h1, header h2, header h3 {
+    font-family: 'Work Sans', sans-serif;
+  }
+
+  header h2 {
+    color: #9900FC;
+    margin: 0;
+    margin-top: 4rem;
+    font-size: 3rem;
+    font-weight: 400;
+  }
+
+  header h3 {
+    color: #333;
+    margin-bottom: 4rem;
+    max-width: 70vw;
+    font-size: 2.25rem;
+    font-weight: 400;
+  }
+
+  .mw-text {
+    max-width: 64rem;
+  }
+
+
+  #metadata {
+    background-color: #e0e0e0;
+    padding: 1rem;
+  }
+  #metadata ul {
+    padding-left: 0.5rem;
+  }
+
+  #freeform-text {
+    margin-bottom: 2rem;
+  }
+
+  main section {
+    max-width: 64rem;
+  }
+
+  #metadata, #controls, #table-container {
+    font-family: monospace;
+  }
+  
+  main {
+    padding: 0 4rem;
+  }
+  
+  #banner {
+    color: #9900FC;
+    background-color: #ffffff;
+    border: 4px dotted #9900FC;;
+    font-size: 1.125rem;
+    padding: 1rem 2rem;
+    padding-right: 2.125rem;
+    margin-top: 0rem;
+    margin-bottom: 2rem;
+    display:none;
+    width: fit-content;
+  }
+
+  #banner a {
+    color: #9900FC;
+    text-decoration: none;
+  }
+
+  #banner.link-hover:hover {
+    border: 4px solid #9900FC;
+  }
+  
+  #controls {
+    margin: 1rem 0;
+  }
+  
+  #scores-table {
+    min-width: 50vw;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    table-layout: fixed;
+    border-spacing: 0;
+  }
+
+  #scores-table td {
+    position: relative; 
+  }
+  
+  #scores-table th, #scores-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: word-wrap;
+  }
+
+  table tr td:not(:first-child),
+  table tr th:not(:first-child) {
+    max-width: 100px;
+  }
+
+  
+  #scores-table th {
+    background-color: #e0e0e0;
+    font-weight: bold;
+  }
+
+  #scores-table td:hover {
+    background-color: #f9f9f9;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #eeeeee;
+    margin-top: 2rem;
+    width: 100vw;
+}
+
+/* Form styles */
+#exception-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#exception-form #message {
+  max-width: 500px;
+  min-width: 300px;
+}
+
+#exception-form #evidence {
+  max-width: 500px;
+  min-width: 300px;
+}
+
+input,
+textarea {
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 1040px) {
+  header h2, header h3 {
+    max-width: 80%;
+  }
+  header h2 {
+    margin-top: 8rem;
+    font-size: 5rem;
+  }
+  header h3 {
+    max-width: 30em;
+    margin-bottom: 10rem;
+  }
+  #metadata {
+    width: 80%;
+  }
+}

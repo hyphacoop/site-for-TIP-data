@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 2rem 4rem;
+    padding-bottom: 0;
+    width: 90vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+
+  /* Link styles: no underline, flex, baseline alignment, wrap */
+  .title-link {
+    text-decoration: none;
+  }
+  
+  /* The main title (H1) */
+  .title {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: baseline;
+    margin: 0;           
+    font-size: 1.25rem;  
+    font-weight: 900;    
+    line-height: 1.2;
+  }
+
+  .uppercase {
+    text-transform: uppercase;
+  }
+
+  
+  .mr2 { 
+    margin-right: 0.5rem; 
+  }
+  
+  .gray {
+    color: #666; 
+  }
+  .mid-gray {
+    color: #555;
+  }
+
+  .regular {
+    font-weight: 400;
+  }
+  .medium { 
+    font-weight: 500;
+  }
+
+/* Navigation */
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+}
+nav li {
+    display: inline;
+    margin-top: 1rem;
+}
+nav a {
+    font-family: 'Work Sans', sans-serif;
+    text-decoration: none;
+    color: #555;
+    font-size: 1rem;
+    transition: color .15s ease-in;
+    padding: 0;
+}
+nav a.active {
+    color: #9900FC; 
+    text-decoration: underline;
+}
+nav a:hover {
+    text-decoration: underline;
+    color: #9900FC; 
+}
+
+.nav-link-img {
+  max-height: 1rem;
+}
+/* new window icon hover effect */
+.nav-link:hover .nav-link-img {
+  filter: brightness(0) saturate(100%) invert(12%) sepia(96%) 
+          saturate(7102%) hue-rotate(282deg) brightness(97%) contrast(108%);
+}
+.nav-link-wrapper {
+  position: relative;
+  display: inline-block;
+}
+/* arrow on hover */
+.nav-link:hover .nav-link-wrapper::after {
+  content: "↗";
+  position: absolute;
+  color: #FFF;
+  font-size: 1rem; 
+  bottom: 50%;         
+  right: 50%;
+  transform: translate(50%, 50%);        
+  z-index: 1; 
+}
+
+/* Mobile nav */
+@media (min-width: 1260px) {
+  nav {
+      padding-left: 1rem;
+      margin-left: 1rem;
+  }
+  nav ul {
+      flex-direction: row;
+  }
+  nav li {
+      margin-top: 0;
+  }
+  nav a {
+    padding: 0 1rem;
+  }
+  .title {
+    font-size: 1.5rem; 
+  }
+  .container {
+    flex-direction: row;
+    align-items: center;
+  }
+  nav ul {
+    margin-top: 0rem;
+  }
+  nav a {
+    font-size: 1.5rem;
+  }
+}
+  
+@media (min-width: 620px) and (max-width: 1440px) {
+  nav a {
+    font-size: 1.25rem;
+  }
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About the program</title>
+  <link rel="stylesheet" href="../assets/styles.css">
+  <link rel="stylesheet" href="../assets/header.css">
+
+
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta property="og:title" content="About the program">
+    <meta property="og:description" content="Explore the Cosmos Hub Testnet program, brought to you by the Hub testnets team at Hypha Worker Co-op.">
+    <meta property="og:image" content="/share-card.png">
+    <meta property="og:url" content="https://testnets.hypha.coop/about-the-program/">
+    <meta property="og:type" content="website">
+  
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="About the program">
+    <meta name="twitter:description" content="Explore the Cosmos Hub Testnet program, brought to you by the Hub testnets team at Hypha Worker Co-op.">
+    <meta name="twitter:image" content="/share-card.png">
+    <meta name="twitter:site" content="@HyphaDoesCosmos">
+  
+</head>
+<body class="canopy">
+  <header>
+    <script src="../assets/nav.js" defer></script>
+    <custom-nav></custom-nav>
+  </header>
+
+  <main>
+    <header>
+      <h2>About Hypha's Testnet Incentives Program</h2>
+      <h3>Funded by ATOM Accelerator DAO since Nov 2023</h3>
+    </header>  
+    <section id="about-tip">
+
+      <h3>The program</h3>
+
+      <p>
+        Since November 2023, Hypha has worked with AADAO to give testnet validators the opportunity to earn ATOM for participating on the Hub’s testnet. <br> This program is meant to incentivize high quality validator performance on the Hub’s testnet on a per-month basis.
+        <br><br>
+        We regularly host 60+ of the Hub’s mainnet validators learning about new features, good node operations, and preparing for possible operational challenges that we might face on mainnet. 
+        <br><br>
+        Validators consistently recognize our program as a great way to learn about gaia-specific features; additional features and tooling such as cosmovisor, cosmwasm, tmptop; and an intense crash course in good node operations and troubleshooting. 
+        <br><br>
+        The Hub provider testnet is <b>public</b>, meaning that anyone can join, run a validator, and learn about gaia node operations and new features on the Cosmos Hub. 
+        <br>
+        <b>However</b> – only active mainnet validators who meet certain criteria are eligible for incentive payments.
+      </p>
+    </section>
+
+    <section id="eligibility">
+      <h3>Validator eligibility</h3>
+      <p>
+       Each period, we evaluate the following basic criteria:
+       <br>
+        <ol>
+          <li>Be an active mainnet validator. Submit proof via our registration form (only needs to be completed once, unless your keys change). </li>
+          <li>Validate all available Top N consumer chains secured by the Cosmos Hub (Neutron and Stride) with > 50% uptime.</li>
+          <li>Use assigned consumer keys for all available Top N consumer chains (i.e., do not reuse your Hub key).</li>
+          <li>Run a testnet infrastructure setup that closely mimics your mainnet setup.</li>
+        </ol>
+      </p>
+      <p>
+        If you meet these three criteria (most testnet validators do), you can participate in testnet events and earn points. 
+        <br>
+        At the end of each period, we'll translate those points into USDC and pay you for your testnet work! There are even bonus points for completing all events perfectly and remaining unjailed.
+        <br><br>
+        We encourage validators to track these criteria for themselves (especially consumer chain uptime) and monitor them closely as we do not make exceptions for these eligibility criteria.
+      </p>
+    </section>
+
+    <section>
+      <h3>Request an exception</h3>
+      <p>Need an exception? Use the form below to reach out, and we'll get back to you soon.</p>
+      <form id="exception-form" 
+        action="https://formspree.io/f/mgvokgzb"
+        method="POST">
+        <label for="name">Your name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="validator">Validator moniker:</label>
+        <input type="text" id="validator" name="validator" required>
+
+        <label for="email">Your email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">Please explain what exception you are requesting:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        
+        <label for="evidence">Paste any supporting logs here:</label>
+        <textarea id="evidence" name="message" rows="5" required></textarea>
+
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>@HyphaDoesCosmos</p>
+  </footer>
+</body>
+</html>
