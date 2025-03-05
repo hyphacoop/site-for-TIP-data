@@ -166,6 +166,15 @@ body {
     background-color: #f9f9f9;
   }
   
+
+  .validator-table {
+    max-width: 250px;
+  }
+  table.validator-table tr td:not(:first-child) {
+    text-align: center;
+  }
+
+  
   footer {
     text-align: center;
     padding: 1rem;

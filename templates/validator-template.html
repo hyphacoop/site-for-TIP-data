@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ validator_name }} - Achievements</title>
+  <meta property="og:title" content="{{ validator_name }} - Achievements">
+  <meta property="og:description" content="Total Points: {{ total_points }} | Perfection Bonus: {{ perfection_bonus }}">
+  <meta property="og:image" content="{{ social_card }}">
+  <meta property="og:type" content="website">
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ validator_name }} - Achievements">
+  <meta name="twitter:description" content="Total Points: {{ total_points }} | Perfection Bonus: {{ perfection_bonus }}">
+  <meta name="twitter:image" content="{{ social_card }}">
+  <meta name="twitter:site" content="@HyphaDoesCosmos">
+
+  <link rel="stylesheet" href="../../assets/styles.css">
+  <link rel="stylesheet" href="../../assets/header.css">
+
+  <style>
+    table {
+        width: 60%;
+        border-collapse: collapse;
+        margin: 20px 0;
+        font-size: 18px;
+    }
+    th, td {
+        padding: 12px;
+        border: 1px solid #999;
+    }
+    th {
+        background-color: #e0e0e0;
+        font-weight: bold;
+        text-align: left;
+    }
+    td {
+        background-color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+    <header>
+        <script src="../../assets/nav.js" defer></script>
+        <custom-nav></custom-nav>
+    </header>
+    <main>
+        <section id="page-header">
+        <h2>{{ validator_name }}</h2>
+        <h3>({{ date_range }})</h3>
+        </section>
+        <table class="validator-table">
+            <tr>
+                <th>Category</th>
+                <th>Points</th>
+            </tr>
+            <tr>
+                <td>Total Points</td>
+                <td>{{ total_points }}</td>
+            </tr>
+            <tr>
+                <td>Perfection Bonus</td>
+                <td>{{ perfection_bonus }}</td>
+            </tr>
+        </table>
+        
+        <p><a class="purple" href="../../">Back to Main Page</a></p>
+    </main>
+</body>
+</html>
