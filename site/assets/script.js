@@ -157,8 +157,13 @@ async function loadCSV(file) {
   // Generate link for clipboard
   function generateLinkForClipboard(moniker, tdElement) {
     const baseUrl = window.location.origin;
-    const validatorUrl = `${baseUrl}/social/${moniker}/`;
 
+    // Get the selected month from the dropdown
+    const selectedMonth = monthSelector.options[monthSelector.selectedIndex].text.toLowerCase().replace(' ', '_');
+
+    // Construct the full URL
+    const validatorUrl = `${baseUrl}/social/${selectedMonth}/${moniker}/`;
+ 
     // Copy the URL to the clipboard
     navigator.clipboard.writeText(validatorUrl)
       .then(() => {
