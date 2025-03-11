@@ -16,8 +16,8 @@
   <meta name="twitter:image" content="{{ social_card }}">
   <meta name="twitter:site" content="@HyphaDoesCosmos">
 
-  <link rel="stylesheet" href="../../assets/styles.css">
-  <link rel="stylesheet" href="../../assets/header.css">
+  <link rel="stylesheet" href="../../../assets/styles.css">
+  <link rel="stylesheet" href="../../../assets/header.css">
 
   <style>
     table {
@@ -28,7 +28,7 @@
     }
     th, td {
         padding: 12px;
-        border: 1px solid #999;
+        border: 1px solid #333;
     }
     th {
         background-color: #e0e0e0;
@@ -41,15 +41,15 @@
   </style>
 </head>
 
-<body>
+<body class="{{ roots_bg }}" id="validator-achievements">
     <header>
-        <script src="../../assets/nav.js" defer></script>
+        <script src="../../../assets/nav.js" defer></script>
         <custom-nav></custom-nav>
     </header>
     <main>
         <section id="page-header">
-        <h2>{{ validator_name }}</h2>
-        <h3>({{ date_range }})</h3>
+            <h2>{{ validator_name }}</h2>
+            <h3>({{ date_range }})</h3>
         </section>
         <table class="validator-table">
             <tr>
@@ -66,7 +66,12 @@
             </tr>
         </table>
         
-        <p><a class="purple" href="../../">Back to Main Page</a></p>
+        <div id="validator-achievements-info">
+            <p id="page-header-text">
+                Validators can share this page on social media to show their achievements.
+            </p>
+            <a class="purple" href="/">Back to Main Page</a>
+        </div>
     </main>
 </body>
 </html>
