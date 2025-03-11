@@ -64,7 +64,18 @@ body {
       background-position: top right;
       background-size: 100%;
     }
-
+    .datura {
+      background-image: url(./images/datura-setaria.webp);
+      background-repeat: no-repeat;
+      background-position: top 1% right;
+      background-size: 39%;
+    }
+    .urtica {
+      background-image: url(./images/urtica.webp);
+      background-repeat: no-repeat;
+      background-position: top right;
+      background-size: 30%;
+    }
 }
 
   header {
