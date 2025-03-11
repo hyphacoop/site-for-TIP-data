@@ -8,107 +8,156 @@ TEMPLATE="templates/validator-template.html"
 # Node.js script for rendering
 RENDER_SCRIPT="scripts/render_images.js"
 
-# Extract the correct filename from files.json
-csv_file=$(jq -r '.[0].file' "$DATA_DIR/files.json")  # Extract the "file" key from the first object
+# Start the local http server that will render HTML to images
+node scripts/start_server.js &  
+SERVER_PID=$!
+echo "Started Express server with PID $SERVER_PID"
 
-# Construct the full path
-csv_file_path="$DATA_DIR/$csv_file"
+# Read each file from files.json
+jq -c '.[]' "$DATA_DIR/files.json" | while read -r entry; do
+  # Extract the CSV filename and label
+  csv_file=$(echo "$entry" | jq -r '.file')
+  date_range=$(echo "$entry" | jq -r '.label')
 
-# Check if the CSV file exists
-if [ ! -f "$csv_file_path" ]; then
-  echo "Error: CSV file not found: $csv_file_path"
-  exit 1
-fi
+  # Construct the full path
+  csv_file_path="$DATA_DIR/$csv_file"
 
-# Check if the template exists
-if [ ! -f "$TEMPLATE" ]; then
-  echo "Error: Template file not found: $TEMPLATE"
-  exit 1
-fi
+  # Extract monthly folder name (remove `.csv`)
+  monthly_folder="${csv_file%.csv}"
 
-# Create the output directory
-mkdir -p "$OUTPUT_DIR"
-
-# Extract the second row (actual header)
-header=$(sed -n '2p' "$csv_file_path")
-
-# Extract start date from column 5
-start_date=$(echo "$header" | awk -F',' '{print $5}' | sed -E 's/ - .*//g' | sed -E 's/ \([0-9]+\)//g')
-
-# Extract last non-empty column
-end_date=$(echo "$header" | awk -F',' '{for (i=NF; i>0; i--) if ($i != "") {print $i; break}}' | sed -E 's/ - .*//g' | sed -E 's/ \([0-9]+\)//g')
-
-# Ensure values exist
-if [[ -n "$start_date" && -n "$end_date" ]]; then
-  date_range="$start_date - $end_date"
-else
-  echo "Error: Could not determine start or end date."
-  exit 1
-fi
-
-# Initialize validator counter
-validator_count=0
-
-# Inform users 
-echo "Generating social cards"
-
-# Read the CSV file (skipping the header row)
-while IFS=',' read -r -a columns; do
-  # Skip empty moniker lines
-  if [ -z "${columns[0]}" ]; then
+  # Check if the CSV file exists
+  if [ ! -f "$csv_file_path" ]; then
+    echo "Error: CSV file not found: $csv_file_path"
     continue
   fi
 
-  # Extract the necessary columns
-  moniker="${columns[0]}"
-  total_points="${columns[1]}"
-
-  # Convert perfection bonus to 🏆 emojis or "0" if zero
-  if [[ "${columns[3]}" =~ ^[0-9]+$ ]]; then
-    perfection_bonus=$([[ "${columns[3]}" -eq 0 ]] && echo "0" || printf '🏆 %.0s' $(seq 1 "${columns[3]}"))
-  else
-    perfection_bonus="0"
+  # Check if the template exists
+  if [ ! -f "$TEMPLATE" ]; then
+    echo "Error: Template file not found: $TEMPLATE"
+    exit 1
   fi
 
-  echo "Generating social card for $moniker"
+  # Create the monthly folder inside the output directory
+  mkdir -p "$OUTPUT_DIR/$monthly_folder"
 
-  # Handle additional dynamic columns
-  rest_columns=("${columns[@]:4}")
+  echo "Processing $csv_file ($date_range)..."
 
-  # Clean up validator moniker to create folder
-  folder_name=$(echo "$moniker" | tr ' ' '_' | tr -cd '[:alnum:]_ -')
+  # Initialize validator counter
+  validator_count=0
 
-  # Create a folder for the validator
-  validator_dir="$OUTPUT_DIR/$folder_name"
-  mkdir -p "$validator_dir"
+  # Inform users 
+  echo "Generating social cards"
 
-  # File paths
-  output_image="$validator_dir/social-card.webp"
-  output_html="$validator_dir/index.html"
+  # Read the CSV file (skipping the header row)
+    tail -n +3 "$csv_file_path" | while IFS= read -r line; do
+    # Initialize empty array for fields
+    fields=()
+    field=""
+    in_quotes=false
 
-  # Escape special characters for the HTML template
-  escaped_moniker=$(printf '%s' "$moniker" | sed -e 's/[&/\]/\\&/g')
-  escaped_date_range=$(printf '%s' "$date_range" | sed -e 's/[&/\]/\\&/g')
+        # Read character by character to handle quoted CSV fields correctly
+    for (( i=0; i<${#line}; i++ )); do
+      char="${line:$i:1}"
+      
+      if [[ "$char" == '"' ]]; then
+        # Check if this is an escaped quote (""") inside a quoted field
+        if [[ "$in_quotes" == true && "${line:$i+1:1}" == '"' ]]; then
+          field+='"'
+          ((i++))  # Skip the next quote character
+        else
+          in_quotes=$([ "$in_quotes" == true ] && echo false || echo true)  # Toggle quote state
+        fi
+      elif [[ "$char" == ',' && "$in_quotes" == false ]]; then
+        fields+=("$field")  # Add field to array
+        field=""  # Reset field buffer
+      else
+        field+="$char"
+      fi
+    done
+    
+    # Add the last field
+    fields+=("$field")
 
-  # Generate the HTML page
-  html_content=$(cat "$TEMPLATE")
-  html_content=$(echo "$html_content" | sed "s/{{ validator_name }}/$escaped_moniker/g")
-  html_content=$(echo "$html_content" | sed "s/{{ total_points }}/$total_points/g")
-  html_content=$(echo "$html_content" | sed "s/{{ perfection_bonus }}/$perfection_bonus/g")
-  html_content=$(echo "$html_content" | sed "s/{{ date_range }}/$escaped_date_range/g")
-  html_content=$(echo "$html_content" | sed "s,{{ social_card }},./social-card.webp,g")
-  html_content=$(echo "$html_content" | sed "s,{{ main_page_link }},../../,g")
+    # Extract fields safely
+    moniker="${fields[0]}"
+    total_points="${fields[1]}"
+    perfection_bonus="${fields[3]}"
 
-  # Write the HTML file
-  echo "$html_content" > "$output_html"
+    # Remove surrounding quotes if present
+    moniker="${moniker#\"}"
+    moniker="${moniker%\"}"
+    total_points="${total_points#\"}"
+    total_points="${total_points%\"}"
+    perfection_bonus="${perfection_bonus#\"}"
+    perfection_bonus="${perfection_bonus%\"}"
 
-  # Render the HTML to a webp image
-  node "$RENDER_SCRIPT" "$output_html" "$output_image"
+       # Skip empty moniker lines
+    if [ -z "$moniker" ]; then
+      continue
+    fi
 
-  # Increment validator counter
-  ((validator_count++))
-done < <(tail -n +3 "$csv_file_path")
+    # Store the numeric value of perfection bonus for the renderer
+    numeric_perfection_bonus=$perfection_bonus
 
-# Print concise summary log
-echo "Date Range: $date_range"
-echo "Generated pages and social cards for $validator_count participants."
+    # Convert perfection bonus to 🏆 emojis or "0" if zero
+    if [[ "$perfection_bonus" =~ ^[0-9]+$ ]]; then
+      perfection_bonus=$([[ "$perfection_bonus" -eq 0 ]] && echo "0" || printf '🏆 %.0s' $(seq 1 "$perfection_bonus"))
+    else
+      perfection_bonus="0"
+      numeric_perfection_bonus=0
+    fi
+
+    # Clean up validator moniker to create folder
+    folder_name=$(echo "$moniker" | tr ' ' '_' | tr -cd '[:alnum:]_ -')
+
+    # Create a folder for the validator inside the monthly folder
+    validator_dir="$OUTPUT_DIR/$monthly_folder/$folder_name"
+    mkdir -p "$validator_dir"
+
+    # File paths
+    output_image="$validator_dir/social-card.webp"
+    output_html="$validator_dir/index.html"
+
+    # Escape special characters for the HTML template
+    escaped_moniker=$(printf '%s' "$moniker" | sed -e 's/[&/\]/\\&/g')
+    escaped_date_range=$(printf '%s' "$date_range" | sed -e 's/[&/\]/\\&/g')
+
+    # Determine roots class based on perfection bonus
+    if [[ "$numeric_perfection_bonus" -eq 0 ]]; then
+        roots_class="roots1"
+    elif [[ "$numeric_perfection_bonus" -eq 1 ]]; then
+        roots_class="roots2"
+    else
+        roots_class="roots3"
+    fi
+    
+    # Generate the HTML page
+    html_content=$(cat "$TEMPLATE")
+    html_content=$(echo "$html_content" | sed "s/{{ validator_name }}/$escaped_moniker/g")
+    html_content=$(echo "$html_content" | sed "s/{{ total_points }}/$total_points/g")
+    html_content=$(echo "$html_content" | sed "s/{{ perfection_bonus }}/$perfection_bonus/g")
+    html_content=$(echo "$html_content" | sed "s/{{ date_range }}/$escaped_date_range/g")
+    html_content=$(echo "$html_content" | sed "s,{{ social_card }},./social-card.webp,g")
+    html_content=$(echo "$html_content" | sed "s,{{ main_page_link }},../../,g")
+    html_content=$(echo "$html_content" | sed "s/{{ roots_bg }}/$roots_class/g")
+    # Write the HTML file
+    echo "$html_content" > "$output_html"
+
+    # Render the HTML to a webp image
+    node "$RENDER_SCRIPT" "$output_html" "$output_image"
+
+    # Increment validator counter
+    ((validator_count++))
+  done < <(tail -n +3 "$csv_file_path")  # Skip header row
+
+  # Print concise summary log
+  echo "Generated pages and social cards for $validator_count participants in $date_range."
+
+done
+
+echo "All CSV files processed successfully!"
+
+# Kill the Express server after processing all files
+kill $SERVER_PID
+echo "Stopped Express server."
+echo "Social card generation complete."
