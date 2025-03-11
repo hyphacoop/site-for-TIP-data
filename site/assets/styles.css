@@ -46,6 +46,25 @@ body {
       background-position: top right;
       background-size: 30%;
     }
+    .roots1 {
+      background-image: url(./images/001.png);
+      background-repeat: no-repeat;
+      background-position: right bottom;
+      background-size: 60%;
+    }
+    .roots2 {
+      background-image: url(./images/002.png);
+      background-repeat: no-repeat;
+      background-position: top right;
+      background-size: 100%;
+    }
+    .roots3 {
+      background-image: url(./images/003.png);
+      background-repeat: no-repeat;
+      background-position: top right;
+      background-size: 100%;
+    }
+
 }
 
   header {
@@ -71,6 +90,9 @@ body {
     margin-bottom: 4rem;
     max-width: 70vw;
     font-size: 2.25rem;
+  }
+
+  header h3, h3 {
     font-weight: 400;
   }
 
@@ -166,9 +188,22 @@ body {
     background-color: #f9f9f9;
   }
   
-
-  .validator-table {
+  #validator-achievements main {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  #validator-achievements-info {
+    background-color: white;
+    border: 1px solid #9900FC;
+    padding: 1rem;
+  }
+  .validator-table, #validator-achievements-info {
     max-width: 250px;
+  }
+  #validator-achievements-info a:hover {
+    text-decoration: underline dashed;
   }
   table.validator-table tr td:not(:first-child) {
     text-align: center;
