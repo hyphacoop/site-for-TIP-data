@@ -61,8 +61,22 @@ jq -c '.[]' "$DATA_DIR/files.json" | while read -r entry; do
     fi
   done
 
+  # First Pass to find Max Possible Points
+  max_total_points=0
+  while IFS="," read -r -a fields; do
+    total_points="${fields[1]}"
+    total_points="${total_points#\"}"
+    total_points="${total_points%\"}"
+
+    if [[ "$total_points" =~ ^[0-9]+$ ]]; then
+      if (( total_points > max_total_points )); then
+        max_total_points=$total_points
+      fi
+    fi
+  done < <(tail -n +3 "$csv_file_path")
+
   # Read the CSV file (skipping the header row)
-    tail -n +3 "$csv_file_path" | while IFS= read -r line; do
+  while IFS= read -r line; do
     # Initialize empty array for fields
     fields=()
     field=""
@@ -114,8 +128,10 @@ jq -c '.[]' "$DATA_DIR/files.json" | while read -r entry; do
       unjailed_bonus=""
     fi
 
+    # Format total points with the highest total
+    total_points_formatted="$total_points / $max_total_points"
 
-       # Skip empty moniker lines
+    # Skip empty moniker lines
     if [ -z "$moniker" ]; then
       continue
     fi
@@ -162,11 +178,13 @@ jq -c '.[]' "$DATA_DIR/files.json" | while read -r entry; do
     else
         roots_class="roots3"
     fi
+
+    escaped_total_points=$(printf '%s' "$total_points_formatted" | sed -e 's/[&/\\]/\\&/g')
     
     # Generate the HTML page
     html_content=$(cat "$TEMPLATE")
     html_content=$(echo "$html_content" | sed "s/{{ validator_name }}/$escaped_moniker/g")
-    html_content=$(echo "$html_content" | sed "s/{{ total_points }}/$total_points/g")
+    html_content=$(echo "$html_content" | sed "s/{{ total_points }}/$escaped_total_points/g")
     html_content=$(echo "$html_content" | sed "s/{{ perfection_bonus }}/$perfection_bonus/g")
     html_content=$(echo "$html_content" | sed "s/{{ date_range }}/$escaped_date_range/g")
     html_content=$(echo "$html_content" | sed "s,{{ social_card }},./social-card.webp,g")
