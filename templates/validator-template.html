@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ validator_name }} - Achievements</title>
-  <meta property="og:title" content="{{ validator_name }} - Achievements">
+  <title>{{ validator_name }} - Achievements for {{ date_range }}</title>
+  <meta property="og:title" content="{{ validator_name }} - Achievements for {{ date_range }}">
   <meta property="og:description" content="Total Points: {{ total_points }} | Perfection Bonus: {{ perfection_bonus }}">
   <meta property="og:image" content="{{ social_card }}">
   <meta property="og:type" content="website">
 
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="{{ validator_name }} - Achievements">
+  <meta name="twitter:title" content="{{ validator_name }} - Achievements for {{ date_range }}">
   <meta name="twitter:description" content="Total Points: {{ total_points }} | Perfection Bonus: {{ perfection_bonus }}">
   <meta name="twitter:image" content="{{ social_card }}">
   <meta name="twitter:site" content="@HyphaDoesCosmos">
@@ -64,6 +64,7 @@
                 <td>Perfection Bonus</td>
                 <td>{{ perfection_bonus }}</td>
             </tr>
+            <tr><td>Unjailed Bonus</td><td>{{ unjailed_bonus }}</td></tr>
         </table>
         
         <div id="validator-achievements-info">
