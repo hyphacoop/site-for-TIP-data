@@ -48,6 +48,19 @@ jq -c '.[]' "$DATA_DIR/files.json" | while read -r entry; do
   # Inform users 
   echo "Generating social cards"
 
+  # Extract headers from the second row
+  headers=$(sed -n '2p' "$csv_file_path")
+  IFS="," read -r -a headers <<< "$headers"
+
+  # Find the index of 'Unjailed bonus' (if it exists)
+  unjailed_bonus_index=-1
+  for i in "${!headers[@]}"; do
+    if [[ "${headers[$i]}" =~ ^Unjailed\ bonus ]]; then
+      unjailed_bonus_index=$i
+      break
+    fi
+  done
+
   # Read the CSV file (skipping the header row)
     tail -n +3 "$csv_file_path" | while IFS= read -r line; do
     # Initialize empty array for fields
@@ -55,7 +68,7 @@ jq -c '.[]' "$DATA_DIR/files.json" | while read -r entry; do
     field=""
     in_quotes=false
 
-        # Read character by character to handle quoted CSV fields correctly
+    # Read character by character to handle quoted CSV fields correctly
     for (( i=0; i<${#line}; i++ )); do
       char="${line:$i:1}"
       
@@ -91,20 +104,39 @@ jq -c '.[]' "$DATA_DIR/files.json" | while read -r entry; do
     perfection_bonus="${perfection_bonus#\"}"
     perfection_bonus="${perfection_bonus%\"}"
 
+
+    # Extract and clean unjailed bonus only if the column exists
+    if [[ $unjailed_bonus_index -ne -1 ]]; then
+      unjailed_bonus="${fields[$unjailed_bonus_index]}"
+      unjailed_bonus="${unjailed_bonus#\"}"
+      unjailed_bonus="${unjailed_bonus%\"}"
+    else
+      unjailed_bonus=""
+    fi
+
+
        # Skip empty moniker lines
     if [ -z "$moniker" ]; then
       continue
     fi
 
     # Store the numeric value of perfection bonus for the renderer
-    numeric_perfection_bonus=$perfection_bonus
+    numeric_perfection_bonus=$((perfection_bonus + unjailed_bonus))
+
+    echo "Generating social card for $moniker..."
 
     # Convert perfection bonus to 🏆 emojis or "0" if zero
     if [[ "$perfection_bonus" =~ ^[0-9]+$ ]]; then
       perfection_bonus=$([[ "$perfection_bonus" -eq 0 ]] && echo "0" || printf '🏆 %.0s' $(seq 1 "$perfection_bonus"))
     else
       perfection_bonus="0"
-      numeric_perfection_bonus=0
+    fi
+
+    # Convert unjailed bonus to emoji or "0" if zero
+    if [[ "$unjailed_bonus" =~ ^[0-9]+$ ]]; then
+      unjailed_bonus=$([[ "$unjailed_bonus" -eq 0 ]] && echo "0" || printf '🏅 %.0s' $(seq 1 "$unjailed_bonus"))
+    else
+      unjailed_bonus=""
     fi
 
     # Clean up validator moniker to create folder
@@ -140,6 +172,13 @@ jq -c '.[]' "$DATA_DIR/files.json" | while read -r entry; do
     html_content=$(echo "$html_content" | sed "s,{{ social_card }},./social-card.webp,g")
     html_content=$(echo "$html_content" | sed "s,{{ main_page_link }},../../,g")
     html_content=$(echo "$html_content" | sed "s/{{ roots_bg }}/$roots_class/g")
+
+    if [[ $unjailed_bonus_index -ne -1 ]]; then
+      html_content=$(echo "$html_content" | sed "s/{{ unjailed_bonus }}/$unjailed_bonus/g")
+    else
+      html_content=$(echo "$html_content" | sed '/<tr><td>Unjailed Bonus<\/td><td>{{ unjailed_bonus }}<\/td><\/tr>/d')
+    fi
+
     # Write the HTML file
     echo "$html_content" > "$output_html"
 
