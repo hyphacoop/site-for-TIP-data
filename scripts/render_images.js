@@ -91,12 +91,12 @@ const fs = require("fs");
         }
         const h2 = document.querySelector("h2");
         if (h2) {
-          h2.style.fontSize = "2rem";
+          h2.style.fontSize = "2.5rem";
           h2.style.margin = "0";
         }
         const h3 = document.querySelector("h3");
         if (h3) {
-          h3.style.fontSize = "2rem";
+          h3.style.fontSize = "2.5rem";
           h3.style.margin = "0";
           h3.style.marginLeft = "1rem";
           h3.style.fontWeight = "normal";
