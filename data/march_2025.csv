@@ -1,65 +1,65 @@
-"Last updated: March 19, 2025",Neutron/Stride uptime qualification is not available yet for this period.,,,,,,,
-Moniker,Total points earned,,Perfection bonus - completing all tasks perfectly this period (so far),Mar 11 (1) - Sign at least one block on test-upgrade-1,Mar 11 (2) - Vote YES on the v22 software upgrade proposal,Mar 11 (3) - Sign at least one block after the v22.0.0 upgrade height and before the v22.1.0 halt height,Mar 11 (4) - Sign at least one of the 5 blocks following a consensus-breaking tx,Mar 18 - Sign within 5 blocks of v23.0.0 upgrade
-#decentralizehk - DHK dao,7,,2,1,1,1,1,1
-🐹 Quokka Stake,7,,2,1,1,1,1,1
-01node,1,,0,0,0,0,0,1
-Alessandro Mazza,0,,0,0,0,0,0,0
-Apeiron Nodes,1,,0,0,0,0,0,1
-BlockHunters,7,,2,1,1,1,1,1
-Blockpower,1,,0,0,0,0,0,1
-blockscape,1,,0,0,0,0,0,1
-Bro_n_Bro,4,,0,1,1,1,1,0
-Citadel.one,7,,2,1,1,1,1,1
-Citizen Web3,7,,2,1,1,1,1,1
-Compass,3,,0,1,0,1,0,1
-Cosmos Spaces,7,,2,1,1,1,1,1
-cosmosrescue,7,,2,1,1,1,1,1
-Cosmostation,7,,2,1,1,1,1,1
-Crouton Digital,7,,2,1,1,1,1,1
-CrowdControl,3,,0,1,0,1,0,1
-CryptoCrew Validators,0,,0,0,0,0,0,0
-dForce,1,,0,0,0,0,0,1
-DragonStake,7,,2,1,1,1,1,1
-DSRV,0,,0,0,0,0,0,0
-Easy 2 Stake,1,,0,0,0,0,0,1
-ECO Stake 🌱,7,,2,1,1,1,1,1
-Enigma,1,,0,0,0,0,0,1
-Everstake,1,,0,0,0,0,0,1
-Forbole,0,,0,0,0,0,0,0
-"Frens  (🤝,🤝)",0,,0,0,0,0,0,0
-Golden Ratio Staking,1,,0,0,0,0,0,1
-HashQuark,3,,0,1,0,1,0,1
-High Stakes,1,,0,0,0,0,0,1
-Huginn,7,,2,1,1,1,1,1
-Imperator.co,0,,0,0,0,0,0,0
-Interstellar Lounge,3,,0,1,0,1,0,1
-Irisnet,7,,2,1,1,1,1,1
-KalpaTech,1,,0,0,0,0,0,1
-Keplr (cosmoshub),1,,0,0,0,0,0,1
-kjnodes.com 🦄,4,,0,1,0,1,1,1
-KysenPool,0,,0,0,0,0,0,0
-Lavender.Five Nodes,1,,0,0,0,0,0,1
-node101,7,,2,1,1,1,1,1
-NodeStake,7,,2,1,1,1,1,1
-Oni ⛩️,0,,0,0,0,0,0,0
-P2P.ORG - P2P Validator,1,,0,0,0,0,0,1
-polkachu.com,1,,0,0,0,0,0,1
-Provalidator,1,,0,0,0,0,0,1
-Quasar,7,,2,1,1,1,1,1
-Silk Nodes,4,,0,1,1,1,0,1
-Simply Staking,1,,0,0,0,0,0,1
-Smart Stake 📈📊,0,,0,0,0,0,0,0
-stake.systems,7,,2,1,1,1,1,1
-Stake&Relax 🦥,1,,0,0,0,0,0,1
-Stakecito,4,,0,1,0,1,1,1
-Stakeflow,1,,0,0,0,0,0,1
-Stakely,3,,0,1,0,1,0,1
-TerraBitcoin Club,7,,2,1,1,1,1,1
-Tessellated,3,,0,1,0,1,0,1
-Ubik Capital,1,,0,0,0,0,0,1
-Virtual Hive,0,,0,0,0,0,0,0
-w3coins,4,,0,1,0,1,1,1
-WeStaking,7,,2,1,1,1,1,1
-WhisperNode,4,,0,1,1,1,1,0
-Witval,7,,2,1,1,1,1,1
-Ztake.org,7,,2,1,1,1,1,1
+"Last updated: March 25, 2025",Neutron/Stride uptime qualification is not available yet for this period.,,,,,,,,,
+Moniker,Total points earned,,Perfection bonus - completing all tasks perfectly this period (so far),Mar 11 (1) - Sign at least one block on test-upgrade-1,Mar 11 (2) - Vote YES on the v22 software upgrade proposal,Mar 11 (3) - Sign at least one block after the v22.0.0 upgrade height and before the v22.1.0 halt height,Mar 11 (4) - Sign at least one of the 5 blocks following a consensus-breaking tx,Mar 18 - Sign within 5 blocks of v23.0.0 upgrade,Mar 25 (1) - Sign at least one block on test-halt-1,Mar 25 (2) - Recover the test-halt-1 chain
+#decentralizehk - DHK dao,9,,2,1,1,1,1,1,1,1
+🐹 Quokka Stake,9,,2,1,1,1,1,1,1,1
+01node,3,,0,0,0,0,0,1,1,1
+Alessandro Mazza,0,,0,0,0,0,0,0,0,0
+Apeiron Nodes,1,,0,0,0,0,0,1,0,0
+BlockHunters,9,,2,1,1,1,1,1,1,1
+Blockpower,1,,0,0,0,0,0,1,0,0
+blockscape,3,,0,0,0,0,0,1,1,1
+Bro_n_Bro,6,,0,1,1,1,1,0,1,1
+Citadel.one,9,,2,1,1,1,1,1,1,1
+Citizen Web3,9,,2,1,1,1,1,1,1,1
+Compass,5,,0,1,0,1,0,1,1,1
+Cosmos Spaces,9,,2,1,1,1,1,1,1,1
+cosmosrescue,9,,2,1,1,1,1,1,1,1
+Cosmostation,9,,2,1,1,1,1,1,1,1
+Crouton Digital,9,,2,1,1,1,1,1,1,1
+CrowdControl,5,,0,1,0,1,0,1,1,1
+CryptoCrew Validators,0,,0,0,0,0,0,0,0,0
+dForce,1,,0,0,0,0,0,1,0,0
+DragonStake,5,,0,1,1,1,1,1,0,0
+DSRV,2,,0,0,0,0,0,0,1,1
+Easy 2 Stake,1,,0,0,0,0,0,1,0,0
+ECO Stake 🌱,9,,2,1,1,1,1,1,1,1
+Enigma,1,,0,0,0,0,0,1,0,0
+Everstake,3,,0,0,0,0,0,1,1,1
+Forbole,0,,0,0,0,0,0,0,0,0
+"Frens  (🤝,🤝)",0,,0,0,0,0,0,0,0,0
+Golden Ratio Staking,1,,0,0,0,0,0,1,0,0
+HashQuark,5,,0,1,0,1,0,1,1,1
+High Stakes,3,,0,0,0,0,0,1,1,1
+Huginn,9,,2,1,1,1,1,1,1,1
+Imperator.co,0,,0,0,0,0,0,0,0,0
+Interstellar Lounge,5,,0,1,0,1,0,1,1,1
+Irisnet,9,,2,1,1,1,1,1,1,1
+KalpaTech,3,,0,0,0,0,0,1,1,1
+Keplr (cosmoshub),3,,0,0,0,0,0,1,1,1
+kjnodes.com 🦄,6,,0,1,0,1,1,1,1,1
+KysenPool,0,,0,0,0,0,0,0,0,0
+Lavender.Five Nodes,3,,0,0,0,0,0,1,1,1
+node101,9,,2,1,1,1,1,1,1,1
+NodeStake,9,,2,1,1,1,1,1,1,1
+Oni ⛩️,0,,0,0,0,0,0,0,0,0
+P2P.ORG - P2P Validator,1,,0,0,0,0,0,1,0,0
+polkachu.com,1,,0,0,0,0,0,1,0,0
+Provalidator,3,,0,0,0,0,0,1,1,1
+Quasar,9,,2,1,1,1,1,1,1,1
+Silk Nodes,6,,0,1,1,1,0,1,1,1
+Simply Staking,1,,0,0,0,0,0,1,0,0
+Smart Stake 📈📊,0,,0,0,0,0,0,0,0,0
+stake.systems,9,,2,1,1,1,1,1,1,1
+Stake&Relax 🦥,3,,0,0,0,0,0,1,1,1
+Stakecito,6,,0,1,0,1,1,1,1,1
+Stakeflow,3,,0,0,0,0,0,1,1,1
+Stakely,5,,0,1,0,1,0,1,1,1
+TerraBitcoin Club,9,,2,1,1,1,1,1,1,1
+Tessellated,3,,0,1,0,1,0,1,0,0
+Ubik Capital,1,,0,0,0,0,0,1,0,0
+Virtual Hive,0,,0,0,0,0,0,0,0,0
+w3coins,6,,0,1,0,1,1,1,1,1
+WeStaking,9,,2,1,1,1,1,1,1,1
+WhisperNode,6,,0,1,1,1,1,0,1,1
+Witval,9,,2,1,1,1,1,1,1,1
+Ztake.org,9,,2,1,1,1,1,1,1,1
