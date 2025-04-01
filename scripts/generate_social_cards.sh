@@ -199,7 +199,7 @@ while IFS= read -r line; do
   html_content=$(echo "$html_content" | sed "s/{{ total_points }}/$escaped_total_points/g")
   html_content=$(echo "$html_content" | sed "s/{{ perfection_bonus }}/$perfection_bonus/g")
   html_content=$(echo "$html_content" | sed "s/{{ date_range }}/$escaped_date_range/g")
-  html_content=$(echo "$html_content" | sed "s,{{ social_card }},./social-card.webp,g")
+  html_content=$(echo "$html_content" | sed "s,{{ social_card }},/social-card.webp,g")
   html_content=$(echo "$html_content" | sed "s,{{ main_page_link }},../../,g")
   html_content=$(echo "$html_content" | sed "s/{{ roots_bg }}/$roots_class/g")
 
