@@ -164,7 +164,6 @@ body {
   
   #scores-table {
     min-width: 50vw;
-    border-collapse: collapse;
     margin-top: 1rem;
     table-layout: fixed;
     border-spacing: 0;
