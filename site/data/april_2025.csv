@@ -1,65 +1,65 @@
-"Last updated: April 30, 2025",Neutron/Stride uptime qualification is not available yet for this period.,,,,,,,,,
-Moniker,Total points earned,,Perfection bonus - completing all tasks perfectly this period (so far),Apr 1 (1) - Sign at least one block on test-recover-1,Apr 1 (2) - Recover the test-recover-1 chain,Apr 8 (1) - Submit build specs,Apr 15 (1) - Send us prometheus metrics,Apr 22 (1) - Send us prometheus metrics during loadtest,Apr 22 (1 Bonus) - Send us your p2p info,Apr 29 (1) - Sign within 5 blocks after the v23.1.1 upgrade
-Oldcat - airdrop DHK every month,5,,0,0,0,1,1,1,1,1
-🐹 Quokka Stake,8,,2,1,1,1,1,1,0,1
-01node,9,,2,1,1,1,1,1,1,1
-Alessandro Mazza,0,,0,0,0,0,0,0,0,0
-Apeiron Nodes,2,,0,0,0,1,0,0,0,1
-BlockHunters🎯,5,,0,1,1,1,0,1,0,1
-Blockpower,0,,0,0,0,0,0,0,0,0
-blockscape,8,,2,1,1,1,1,1,0,1
-Bro_n_Bro,8,,2,1,1,1,1,1,0,1
-Citadel.one,8,,2,1,1,1,1,1,0,1
-Citizen Web3,9,,2,1,1,1,1,1,1,1
-Compass,5,,0,1,1,1,1,1,0,0
-Cosmos Spaces,9,,2,1,1,1,1,1,1,1
-cosmosrescue,9,,2,1,1,1,1,1,1,1
-Cosmostation,1,,0,0,0,0,0,0,0,1
-Crouton Digital,9,,2,1,1,1,1,1,1,1
-CrowdControl,5,,0,1,1,1,1,1,0,0
-CryptoCrew Validators,0,,0,0,0,0,0,0,0,0
-dForce,0,,0,0,0,0,0,0,0,0
-DragonStake,3,,0,0,0,1,1,0,0,1
-DSRV,9,,2,1,1,1,1,1,1,1
-Easy 2 Stake,8,,2,1,1,1,1,1,0,1
-ECO Stake 🌱,9,,2,1,1,1,1,1,1,1
-Enigma,0,,0,0,0,0,0,0,0,0
-Everstake,9,,2,1,1,1,1,1,1,1
-Forbole,0,,0,0,0,0,0,0,0,0
-"Frens  (🤝,🤝)",0,,0,0,0,0,0,0,0,0
-Golden Ratio Staking,1,,0,0,0,0,0,0,0,1
-HashQuark,5,,0,1,1,1,1,0,0,1
-High Stakes,9,,2,1,1,1,1,1,1,1
-Huginn,8,,2,1,1,1,1,1,0,1
-Imperator.co,0,,0,0,0,0,0,0,0,0
-Interstellar Lounge,8,,2,1,1,1,1,1,0,1
-Irisnet,5,,0,1,1,1,1,0,0,1
-KalpaTech,4,,0,0,0,1,1,1,0,1
-Keplr (cosmoshub),4,,0,1,1,0,1,0,0,1
-kjnodes.com 🦄,4,,0,1,1,1,0,0,0,1
-KysenPool,0,,0,0,0,0,0,0,0,0
-Lavender.Five Nodes,8,,2,1,1,1,1,1,0,1
-node101,8,,2,1,1,1,1,1,0,1
-NodeStake,9,,2,1,1,1,1,1,1,1
-Oni ⛩️,0,,0,0,0,0,0,0,0,0
-P2P.ORG - P2P Validator,1,,0,0,0,0,0,0,0,1
-polkachu.com,1,,0,0,0,0,0,0,0,1
-Provalidator,5,,0,1,1,1,1,0,0,1
-Quasar,8,,2,1,1,1,1,1,0,1
-Silk Nodes,8,,2,1,1,1,1,1,0,1
-Simply Staking,5,,0,0,0,1,1,1,1,1
-Smart Stake 📈📊,2,,0,0,0,1,0,0,0,1
-stake.systems,5,,0,1,1,1,1,0,0,1
-Stake&Relax 🦥,8,,2,1,1,1,1,1,0,1
-Stakecito,4,,0,1,1,1,1,0,0,0
-Stakeflow,8,,2,1,1,1,1,1,0,1
-Stakely,9,,2,1,1,1,1,1,1,1
-TerraBitcoin Club,9,,2,1,1,1,1,1,1,1
-Tessellated,2,,0,0,0,0,1,1,0,0
-Ubik Capital,1,,0,0,0,0,0,0,0,1
-Virtual Hive,0,,0,0,0,0,0,0,0,0
-w3coins,9,,2,1,1,1,1,1,1,1
-WeStaking,9,,2,1,1,1,1,1,1,1
-WhisperNode,3,,0,1,1,1,0,0,0,0
-Witval,9,,2,1,1,1,1,1,1,1
-Ztake.org,8,,2,1,1,1,1,1,0,1
+"Last updated: May 5, 2025","April 2025 payouts will occur on ~May 8, 2025.",,,,,,,,,,,,
+Moniker,Total points earned,,Perfection bonus - completing all tasks perfectly this period (so far),Unjailed bonus - remain unjailed for the entire period,Apr 1 (1) - Sign at least one block on test-recover-1,Apr 1 (2) - Recover the test-recover-1 chain,Apr 8 (1) - Submit build specs,Apr 15 (1) - Send us prometheus metrics,Apr 22 (1) - Send us prometheus metrics during loadtest,Apr 22 (1 Bonus) - Send us your p2p info,Apr 29 (1) - Sign within 5 blocks after the v23.1.1 upgrade,,Stride uptime - must be >0.5 to qualify for TIP this period
+Oldcat - airdrop DHK every month,6,,0,1,0,0,1,1,1,1,1,,TRUE
+🐹 Quokka Stake,9,,2,1,1,1,1,1,1,0,1,,TRUE
+01node,10,,2,1,1,1,1,1,1,1,1,,FALSE
+Alessandro Mazza,1,,0,1,0,0,0,0,0,0,0,,TRUE
+Apeiron Nodes,3,,0,1,0,0,1,0,0,0,1,,TRUE
+BlockHunters🎯,6,,0,1,1,1,1,0,1,0,1,,TRUE
+Blockpower,1,,0,1,0,0,0,0,0,0,0,,TRUE
+blockscape,9,,2,1,1,1,1,1,1,0,1,,TRUE
+Bro_n_Bro,9,,2,1,1,1,1,1,1,0,1,,TRUE
+Citadel.one,9,,2,1,1,1,1,1,1,0,1,,TRUE
+Citizen Web3,10,,2,1,1,1,1,1,1,1,1,,TRUE
+Compass,6,,0,1,1,1,1,1,1,0,0,,TRUE
+Cosmos Spaces,10,,2,1,1,1,1,1,1,1,1,,TRUE
+cosmosrescue,10,,2,1,1,1,1,1,1,1,1,,TRUE
+Cosmostation,2,,0,1,0,0,0,0,0,0,1,,TRUE
+Crouton Digital,10,,2,1,1,1,1,1,1,1,1,,TRUE
+CrowdControl,6,,0,1,1,1,1,1,1,0,0,,TRUE
+CryptoCrew Validators,1,,0,1,0,0,0,0,0,0,0,,TRUE
+dForce,1,,0,1,0,0,0,0,0,0,0,,TRUE
+DragonStake,4,,0,1,0,0,1,1,0,0,1,,TRUE
+DSRV,10,,2,1,1,1,1,1,1,1,1,,TRUE
+Easy 2 Stake,9,,2,1,1,1,1,1,1,0,1,,TRUE
+ECO Stake 🌱,10,,2,1,1,1,1,1,1,1,1,,TRUE
+Enigma,1,,0,1,0,0,0,0,0,0,0,,TRUE
+Everstake,10,,2,1,1,1,1,1,1,1,1,,TRUE
+Forbole,1,,0,1,0,0,0,0,0,0,0,,TRUE
+"Frens  (🤝,🤝)",1,,0,1,0,0,0,0,0,0,0,,FALSE
+Golden Ratio Staking,2,,0,1,0,0,0,0,0,0,1,,TRUE
+HashQuark,6,,0,1,1,1,1,1,0,0,1,,TRUE
+High Stakes,10,,2,1,1,1,1,1,1,1,1,,TRUE
+Huginn,8,,2,0,1,1,1,1,1,0,1,,TRUE
+Imperator.co,1,,0,1,0,0,0,0,0,0,0,,TRUE
+Interstellar Lounge,9,,2,1,1,1,1,1,1,0,1,,TRUE
+Irisnet,5,,0,0,1,1,1,1,0,0,1,,TRUE
+KalpaTech,5,,0,1,0,0,1,1,1,0,1,,TRUE
+Keplr (cosmoshub),5,,0,1,1,1,0,1,0,0,1,,TRUE
+kjnodes.com 🦄,4,,0,0,1,1,1,0,0,0,1,,TRUE
+KysenPool,1,,0,1,0,0,0,0,0,0,0,,TRUE
+Lavender.Five Nodes,9,,2,1,1,1,1,1,1,0,1,,TRUE
+node101,9,,2,1,1,1,1,1,1,0,1,,TRUE
+NodeStake,10,,2,1,1,1,1,1,1,1,1,,TRUE
+Oni ⛩️,0,,0,0,0,0,0,0,0,0,0,,TRUE
+P2P.ORG - P2P Validator,2,,0,1,0,0,0,0,0,0,1,,TRUE
+polkachu.com,2,,0,1,0,0,0,0,0,0,1,,TRUE
+Provalidator,6,,0,1,1,1,1,1,0,0,1,,TRUE
+Quasar,9,,2,1,1,1,1,1,1,0,1,,TRUE
+Silk Nodes,9,,2,1,1,1,1,1,1,0,1,,TRUE
+Simply Staking,6,,0,1,0,0,1,1,1,1,1,,TRUE
+Smart Stake 📈📊,3,,0,1,0,0,1,0,0,0,1,,TRUE
+stake.systems,6,,0,1,1,1,1,1,0,0,1,,TRUE
+Stake&Relax 🦥,9,,2,1,1,1,1,1,1,0,1,,TRUE
+Stakecito,5,,0,1,1,1,1,1,0,0,0,,TRUE
+Stakeflow,9,,2,1,1,1,1,1,1,0,1,,TRUE
+Stakely,10,,2,1,1,1,1,1,1,1,1,,TRUE
+TerraBitcoin Club,10,,2,1,1,1,1,1,1,1,1,,TRUE
+Tessellated,3,,0,1,0,0,0,1,1,0,0,,TRUE
+Ubik Capital,2,,0,1,0,0,0,0,0,0,1,,TRUE
+Virtual Hive,1,,0,1,0,0,0,0,0,0,0,,#N/A
+w3coins,10,,2,1,1,1,1,1,1,1,1,,TRUE
+WeStaking,10,,2,1,1,1,1,1,1,1,1,,TRUE
+WhisperNode,3,,0,0,1,1,1,0,0,0,0,,TRUE
+Witval,10,,2,1,1,1,1,1,1,1,1,,TRUE
+Ztake.org,9,,2,1,1,1,1,1,1,0,1,,TRUE
