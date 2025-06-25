@@ -1,65 +1,65 @@
-"Last updated: June 17, 2025",Stride uptime qualification is not available yet for this period.,,,,,,,
-Moniker,Total points earned,,Perfection bonus - completing all tasks perfectly this period (so far),Jun 03 - show up on prometheus metrics,Jun 10 (1) - Tokenize shares with demo-day validator,Jun 10 (2) - Vote on proposal 271,Jun 10 (3) - Vote on proposal 272,Jun 17 - Sign within 5 blocks after the v25.0.0-rc0 upgrade
-Oldcat - airdrop DHK every month,7,,2,1,1,1,1,1
-🐹 Quokka Stake,7,,2,1,1,1,1,1
-01node,7,,2,1,1,1,1,1
-Alessandro Mazza,0,,0,0,0,0,0,0
-Apeiron Nodes,0,,0,0,0,0,0,0
-BlockHunters🎯,7,,2,1,1,1,1,1
-Blockpower,2,,0,1,0,0,0,1
-blockscape,7,,2,1,1,1,1,1
-Bro_n_Bro,4,,0,1,1,1,1,0
-Citadel.one,7,,2,1,1,1,1,1
-Citizen Web3,7,,2,1,1,1,1,1
-Compass,3,,0,0,1,1,1,0
-Cosmos Spaces,7,,2,1,1,1,1,1
-cosmosrescue,7,,2,1,1,1,1,1
-Cosmostation,1,,0,0,0,0,0,1
-Crouton Digital,7,,2,1,1,1,1,1
-CrowdControl,3,,0,0,1,1,1,0
-CryptoCrew Validators,0,,0,0,0,0,0,0
-dForce,2,,0,1,0,0,0,1
-DragonStake,1,,0,0,0,0,0,1
-DSRV,7,,2,1,1,1,1,1
-Easy 2 Stake,3,,0,1,1,0,0,1
-ECO Stake 🌱,7,,2,1,1,1,1,1
-Enigma,1,,0,0,0,0,0,1
-Everstake,3,,0,1,1,0,0,1
-Forbole,0,,0,0,0,0,0,0
-"Frens  (🤝,🤝)",0,,0,0,0,0,0,0
-Golden Ratio Staking,4,,0,0,1,1,1,1
-HashQuark,1,,0,0,0,0,0,1
-High Stakes,7,,2,1,1,1,1,1
-Huginn,7,,2,1,1,1,1,1
-Imperator.co,0,,0,0,0,0,0,0
-Interstellar Lounge,7,,2,1,1,1,1,1
-Irisnet,3,,0,0,0,1,1,1
-KalpaTech,7,,2,1,1,1,1,1
-Keplr (cosmoshub),7,,2,1,1,1,1,1
-kjnodes.com 🦄,4,,0,0,1,1,1,1
-KysenPool,0,,0,0,0,0,0,0
-Lavender.Five Nodes,1,,0,0,0,0,0,1
-node101,7,,2,1,1,1,1,1
-NodeStake,4,,0,0,1,1,1,1
-Oni ⛩️,1,,0,0,0,0,0,1
-P2P.ORG - P2P Validator,1,,0,0,0,0,0,1
-polkachu.com,1,,0,0,0,0,0,1
-Provalidator,4,,0,0,1,1,1,1
-Quasar,1,,0,0,0,0,0,1
-Silk Nodes,1,,0,0,0,0,0,1
-Simply Staking,7,,2,1,1,1,1,1
-Smart Stake 📈📊,1,,0,0,0,0,0,1
-stake.systems,7,,2,1,1,1,1,1
-Stake&Relax 🦥,7,,2,1,1,1,1,1
-Stakecito,3,,0,0,1,1,1,0
-Stakeflow,7,,2,1,1,1,1,1
-Stakely,7,,2,1,1,1,1,1
-TerraBitcoin Club,7,,2,1,1,1,1,1
-Tessellated,4,,0,1,1,1,0,1
-Ubik Capital,4,,0,0,1,1,1,1
-Virtual Hive,0,,0,0,0,0,0,0
-w3coins,7,,2,1,1,1,1,1
-WeStaking,4,,0,0,1,1,1,1
-WhisperNode,0,,0,0,0,0,0,0
-Witval,7,,2,1,1,1,1,1
-Ztake.org,2,,0,1,1,0,0,0
+"Last updated: June 25, 2025","June 2025 payouts will occur on ~July 7, 2025.",,,,,,,,,,,,,
+Moniker,Total points earned,,Perfection bonus - completing all tasks perfectly this period (so far),Unjailed bonus - remain unjailed for the entire period,Jun 03 - show up on prometheus metrics,Jun 10 (1) - Tokenize shares with demo-day validator,Jun 10 (2) - Vote on proposal 271,Jun 10 (3) - Vote on proposal 272,Jun 17 - Sign within 5 blocks after the v25.0.0-rc0 upgrade,Jun 24 (1) - Tokenize shares,Jun 24 (2) - Transfer ownership,Jun 24 (3) - Redeem tokens,,Stride uptime - must be >0.5 to qualify for TIP this period
+Oldcat - airdrop DHK every month,11,,2,1,1,1,1,1,1,1,1,1,,0.974
+🐹 Quokka Stake,11,,2,1,1,1,1,1,1,1,1,1,,0.927
+01node,11,,2,1,1,1,1,1,1,1,1,1,,0.998
+Alessandro Mazza,1,,0,1,0,0,0,0,0,0,0,0,,0
+Apeiron Nodes,1,,0,1,0,0,0,0,0,0,0,0,,0.459
+BlockHunters🎯,11,,2,1,1,1,1,1,1,1,1,1,,0.986
+Blockpower,6,,0,1,1,0,0,0,1,1,1,1,,0.999
+blockscape,11,,2,1,1,1,1,1,1,1,1,1,,1.001
+Bro_n_Bro,8,,0,1,1,1,1,1,0,1,1,1,,0.97
+Citadel.one,6,,0,1,1,1,1,1,1,0,0,0,,0.989
+Citizen Web3,11,,2,1,1,1,1,1,1,1,1,1,,0.957
+Compass,7,,0,1,0,1,1,1,0,1,1,1,,0.984
+Cosmos Spaces,8,,0,1,1,1,1,1,1,1,1,0,,0.995
+cosmosrescue,11,,2,1,1,1,1,1,1,1,1,1,,0.964
+Cosmostation,2,,0,1,0,0,0,0,1,0,0,0,,1
+Crouton Digital,11,,2,1,1,1,1,1,1,1,1,1,,0.994
+CrowdControl,7,,0,1,0,1,1,1,0,1,1,1,,0.878
+CryptoCrew Validators,1,,0,1,0,0,0,0,0,0,0,0,,0.99
+dForce,6,,0,1,1,0,0,0,1,1,1,1,,0.989
+DragonStake,5,,0,1,0,0,0,0,1,1,1,1,,1
+DSRV,11,,2,1,1,1,1,1,1,1,1,1,,0.902
+Easy 2 Stake,7,,0,1,1,1,0,0,1,1,1,1,,0.983
+ECO Stake 🌱,11,,2,1,1,1,1,1,1,1,1,1,,0.988
+Enigma,2,,0,1,0,0,0,0,1,0,0,0,,0.998
+Everstake,7,,0,1,1,1,0,0,1,1,1,1,,1
+Forbole,1,,0,1,0,0,0,0,0,0,0,0,,0.998
+"Frens  (🤝,🤝)",1,,0,1,0,0,0,0,0,0,0,0,,0.997
+Golden Ratio Staking,5,,0,1,0,1,1,1,1,0,0,0,,0.992
+HashQuark,5,,0,1,0,0,0,0,1,1,1,1,,0.957
+High Stakes,11,,2,1,1,1,1,1,1,1,1,1,,0.969
+Huginn,11,,2,1,1,1,1,1,1,1,1,1,,1.001
+Imperator.co,1,,0,1,0,0,0,0,0,0,0,0,,0.991
+Interstellar Lounge,11,,2,1,1,1,1,1,1,1,1,1,,0.968
+Irisnet,6,,0,0,0,0,1,1,1,1,1,1,,0.94
+KalpaTech,11,,2,1,1,1,1,1,1,1,1,1,,0.999
+Keplr (cosmoshub),11,,2,1,1,1,1,1,1,1,1,1,,0.982
+kjnodes.com 🦄,8,,0,1,0,1,1,1,1,1,1,1,,0.933
+KysenPool,1,,0,1,0,0,0,0,0,0,0,0,,0
+Lavender.Five Nodes,2,,0,1,0,0,0,0,1,0,0,0,,0.999
+node101,11,,2,1,1,1,1,1,1,1,1,1,,0.988
+NodeStake,8,,0,1,0,1,1,1,1,1,1,1,,1
+Oni ⛩️,2,,0,1,0,0,0,0,1,0,0,0,,0.999
+P2P.ORG - P2P Validator,2,,0,1,0,0,0,0,1,0,0,0,,0.967
+polkachu.com,5,,0,1,0,0,0,0,1,1,1,1,,0.999
+Provalidator,6,,0,1,0,1,1,1,1,1,0,0,,0.991
+Quasar,5,,0,1,0,0,0,0,1,1,1,1,,0.887
+Silk Nodes,2,,0,1,0,0,0,0,1,0,0,0,,0.955
+Simply Staking,11,,2,1,1,1,1,1,1,1,1,1,,0.984
+Smart Stake 📈📊,5,,0,1,0,0,0,0,1,1,1,1,,0.999
+stake.systems,11,,2,1,1,1,1,1,1,1,1,1,,0.998
+Stake&Relax 🦥,11,,2,1,1,1,1,1,1,1,1,1,,0.978
+Stakecito,3,,0,0,0,1,1,1,0,0,0,0,,0.996
+Stakeflow,11,,2,1,1,1,1,1,1,1,1,1,,0.982
+Stakely,11,,2,1,1,1,1,1,1,1,1,1,,0.979
+TerraBitcoin Club,10,,2,0,1,1,1,1,1,1,1,1,,0.904
+Tessellated,8,,0,1,1,1,1,0,1,1,1,1,,0.957
+Ubik Capital,8,,0,1,0,1,1,1,1,1,1,1,,0.998
+Virtual Hive,1,,0,1,0,0,0,0,0,0,0,0,,#N/A
+w3coins,11,,2,1,1,1,1,1,1,1,1,1,,0.999
+WeStaking,8,,0,1,0,1,1,1,1,1,1,1,,0.943
+WhisperNode,0,,0,0,0,0,0,0,0,0,0,0,,0
+Witval,11,,2,1,1,1,1,1,1,1,1,1,,0.938
+Ztake.org,6,,0,1,1,1,0,0,0,1,1,1,,0
