@@ -1,73 +1,73 @@
-"Last updated: November 13, 2025",,,,
-Moniker,Total points earned,,Perfection bonus - completing all tasks perfectly this period (so far),Nov 11 - Sign within 5 blocks after the v25.2.0 upgrade
-🐹 Quokka Stake,3,,2,1
-01node,3,,2,1
-Alessandro Mazza,0,,0,0
-Apeiron Nodes,0,,0,0
-BlockHunters,3,,2,1
-Blockpower,3,,2,1
-blockscape,3,,2,1
-Bro_n_Bro,3,,2,1
-Citadel.one,3,,2,1
-Citizen Web3,3,,2,1
-Compass,3,,2,1
-Cosmos Spaces,3,,2,1
-cosmosrescue,3,,2,1
-Cosmostation,3,,2,1
-Crosnest,3,,2,1
-Crouton Digital,3,,2,1
-CrowdControl,3,,2,1
-CryptoCrew Validators,3,,2,1
-dForce,3,,2,1
-DragonStake,3,,2,1
-DELIGHT,3,,2,1
-DSRV,3,,2,1
-Easy 2 Stake,3,,2,1
-ECO Stake 🌱,3,,2,1
-Enigma,3,,2,1
-Everstake,0,,0,0
-Forbole,0,,0,0
-"Frens  (🤝,🤝)",0,,0,0
-Golden Ratio Staking,3,,2,1
-HashQuark,3,,2,1
-High Stakes,3,,2,1
-Huginn,3,,2,1
-Imperator.co,0,,0,0
-Inter Blockchain Services,3,,2,1
-Interstellar Lounge,3,,2,1
-Irisnet,0,,0,0
-ITRocket,3,,2,1
-KalpaTech,3,,2,1
-Keplr (cosmoshub),0,,0,0
-kjnodes.com 🦄,3,,2,1
-KysenPool,0,,0,0
-Lavender.Five Nodes 🐝,3,,2,1
-node101,3,,2,1
-NodeStake,3,,2,1
-NO FEE | Atlas Staking (Autocompound Rewards),0,,0,0
-Oldcat - airdrop DHK every month,3,,2,1
-Oni ⛩️,0,,0,0
-papadritta,0,,0,0
-polkachu.com,3,,2,1
-pro-nodes75,3,,2,1
-P2P.ORG - P2P Validator,3,,2,1
-Provalidator,3,,2,1
-POSTHUMAN 🧬 StakeDrop,0,,0,0
-Quasar,0,,0,0
-Silk Nodes,3,,2,1
-Simply Staking,3,,2,1
-Smart Stake 📈📊,3,,2,1
-stake.systems,3,,2,1
-Stake&Relax 🦥,3,,2,1
-Stakecito,3,,2,1
-Stakeflow,3,,2,1
-Stakely,3,,2,1
-TerraBitcoin Club,3,,2,1
-Tessellated,0,,0,0
-Ubik Capital,3,,2,1
-Virtual Hive,0,,0,0
-w3coins,3,,2,1
-WeStaking,3,,2,1
-WhisperNode,0,,0,0
-Witval,3,,2,1
-Ztake.org,3,,2,1
+"Last updated: Dec 2, 2025","November 2025 payouts will occur on ~December 10, 2025.",,,,,,,,
+Moniker,Total points earned,,Perfection bonus - completing all tasks perfectly this period (so far),Unjailed bonus - remain unjailed for the entire period,Nov 11 - Sign within 5 blocks after the v25.2.0 upgrade,Nov 25 - Miss one block during halt operation,,Provider uptime - must be >0.8 to qualify for TIP this period,Hub uptime - must be >0.8 to qualify for TIP this period
+🐹 Quokka Stake,5,,2,1,1,1,,99%,100%
+01node,2,,0,1,1,0,,100%,100%
+Alessandro Mazza,0,,0,0,0,0,,0%,100%
+Apeiron Nodes,0,,0,0,0,0,,0%,0%
+BlockHunters,2,,0,1,1,0,,100%,99%
+Blockpower,5,,2,1,1,1,,100%,100%
+blockscape,2,,0,1,1,0,,100%,100%
+Bro_n_Bro,1,,0,0,1,0,,0%,100%
+Citadel.one,5,,2,1,1,1,,99%,100%
+Citizen Web3,5,,2,1,1,1,,100%,100%
+Compass,5,,2,1,1,1,,100%,100%
+Cosmos Spaces,5,,2,1,1,1,,100%,100%
+cosmosrescue,5,,2,1,1,1,,99%,100%
+Cosmostation,2,,0,1,1,0,,100%,100%
+Crosnest,2,,0,1,1,0,,100%,100%
+Crouton Digital,5,,2,1,1,1,,100%,100%
+CrowdControl,5,,2,1,1,1,,100%,100%
+CryptoCrew Validators,2,,0,1,1,0,,100%,100%
+dForce,5,,2,1,1,1,,100%,99%
+DragonStake,2,,0,1,1,0,,100%,100%
+DELIGHT,2,,0,1,1,0,,100%,68%
+DSRV,2,,0,1,1,0,,100%,100%
+Easy 2 Stake,5,,2,1,1,1,,100%,100%
+ECO Stake 🌱,5,,2,1,1,1,,100%,100%
+Enigma,2,,0,1,1,0,,100%,100%
+Everstake,0,,0,0,0,0,,0%,100%
+Forbole,0,,0,0,0,0,,0%,100%
+"Frens  (🤝,🤝)",0,,0,0,0,0,,0%,100%
+Golden Ratio Staking,2,,0,1,1,0,,100%,100%
+HashQuark,5,,2,1,1,1,,100%,100%
+High Stakes,2,,0,1,1,0,,100%,100%
+Huginn,1,,0,0,1,0,,0%,100%
+Imperator.co,0,,0,0,0,0,,0%,100%
+Inter Blockchain Services,2,,0,1,1,0,,100%,100%
+Interstellar Lounge,5,,2,1,1,1,,100%,100%
+Irisnet,2,,0,1,0,1,,100%,100%
+ITRocket,2,,0,1,1,0,,100%,98%
+KalpaTech,5,,2,1,1,1,,100%,100%
+Keplr (cosmoshub),0,,0,0,0,0,,0%,100%
+kjnodes.com 🦄,5,,2,1,1,1,,100%,100%
+KysenPool,0,,0,0,0,0,,0%,99%
+Lavender.Five Nodes 🐝,1,,0,0,1,0,,0%,100%
+node101,2,,0,1,1,0,,100%,100%
+NodeStake,5,,2,1,1,1,,100%,100%
+NO FEE | Atlas Staking (Autocompound Rewards),1,,0,0,0,1,,50%,100%
+Oldcat - airdrop DHK every month,5,,2,1,1,1,,96%,95%
+Oni ⛩️,1,,0,1,0,0,,99%,100%
+papadritta,0,,0,0,0,0,,85%,0%
+polkachu.com,2,,0,1,1,0,,100%,100%
+pro-nodes75,5,,2,1,1,1,,100%,0%
+P2P.ORG - P2P Validator,2,,0,1,1,0,,100%,100%
+Provalidator,2,,0,1,1,0,,100%,100%
+POSTHUMAN 🧬 StakeDrop,1,,0,1,0,0,,100%,100%
+Quasar,2,,0,1,0,1,,48%,100%
+Silk Nodes,5,,2,1,1,1,,100%,100%
+Simply Staking,2,,0,1,1,0,,100%,100%
+Smart Stake 📈📊,5,,2,1,1,1,,100%,100%
+stake.systems,5,,2,1,1,1,,100%,100%
+Stake&Relax 🦥,5,,2,1,1,1,,100%,100%
+Stakecito,5,,2,1,1,1,,100%,100%
+Stakeflow,5,,2,1,1,1,,100%,100%
+Stakely,5,,2,1,1,1,,100%,100%
+TerraBitcoin Club,5,,2,1,1,1,,100%,100%
+Tessellated,1,,0,1,0,0,,99%,100%
+Ubik Capital,2,,0,1,1,0,,100%,100%
+Virtual Hive,0,,0,0,0,0,,0%,0%
+w3coins,5,,2,1,1,1,,100%,100%
+WeStaking,5,,2,1,1,1,,100%,100%
+WhisperNode,0,,0,0,0,0,,0%,0%
+Witval,5,,2,1,1,1,,100%,100%
+Ztake.org,2,,0,1,1,0,,100%,100%
