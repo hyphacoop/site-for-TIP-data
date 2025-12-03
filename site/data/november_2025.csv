@@ -1,4 +1,4 @@
-"Last updated: Dec 2, 2025","November 2025 payouts will occur on ~December 10, 2025.",,,,,,,,
+"Last updated: Dec 3, 2025","November 2025 payouts will occur on ~December 10, 2025.",,,,,,,,
 Moniker,Total points earned,,Perfection bonus - completing all tasks perfectly this period (so far),Unjailed bonus - remain unjailed for the entire period,Nov 11 - Sign within 5 blocks after the v25.2.0 upgrade,Nov 25 - Miss one block during halt operation,,Provider uptime - must be >0.8 to qualify for TIP this period,Hub uptime - must be >0.8 to qualify for TIP this period
 🐹 Quokka Stake,5,,2,1,1,1,,99%,100%
 01node,2,,0,1,1,0,,100%,100%
@@ -53,6 +53,7 @@ pro-nodes75,5,,2,1,1,1,,100%,0%
 P2P.ORG - P2P Validator,2,,0,1,1,0,,100%,100%
 Provalidator,2,,0,1,1,0,,100%,100%
 POSTHUMAN 🧬 StakeDrop,1,,0,1,0,0,,100%,100%
+PRO Delegators,4,,2,0,1,1,,84%,100%
 Quasar,2,,0,1,0,1,,48%,100%
 Silk Nodes,5,,2,1,1,1,,100%,100%
 Simply Staking,5,,2,1,1,1,,100%,100%
