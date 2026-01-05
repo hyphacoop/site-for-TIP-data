@@ -1,74 +1,65 @@
-"Last updated: December 17, 2025",,,,
-Moniker,Total points earned,,Perfection bonus - completing all tasks perfectly this period (so far),Dec 16 - Vote on a feemarket param update proposal
-🐹 Quokka Stake,3,,2,1
-01node,3,,2,1
-Alessandro Mazza,0,,0,0
-Apeiron Nodes,0,,0,0
-BlockHunters,3,,2,1
-Blockpower,0,,0,0
-blockscape,0,,0,0
-Bro_n_Bro,3,,2,1
-Citadel.one,3,,2,1
-Citizen Web3,3,,2,1
-Compass,3,,2,1
-Cosmos Spaces,3,,2,1
-cosmosrescue,3,,2,1
-Cosmostation,0,,0,0
-Crosnest,0,,0,0
-Crouton Digital,3,,2,1
-CrowdControl,3,,2,1
-CryptoCrew Validators,3,,2,1
-dForce,0,,0,0
-DragonStake,3,,2,1
-DELIGHT,0,,0,0
-DSRV,0,,0,0
-Easy 2 Stake,3,,2,1
-ECO Stake 🌱,3,,2,1
-Enigma,0,,0,0
-Everstake,0,,0,0
-Forbole,0,,0,0
-"Frens  (🤝,🤝)",0,,0,0
-Golden Ratio Staking,0,,0,0
-HashQuark,3,,2,1
-High Stakes,3,,2,1
-Huginn,3,,2,1
-Imperator.co,0,,0,0
-Inter Blockchain Services,3,,2,1
-Interstellar Lounge,3,,2,1
-Irisnet,0,,0,0
-ITRocket,3,,2,1
-KalpaTech,0,,0,0
-Keplr (cosmoshub),0,,0,0
-kjnodes.com 🦄,3,,2,1
-KysenPool,0,,0,0
-Lavender.Five Nodes 🐝,0,,0,0
-node101,3,,2,1
-NodeStake,3,,2,1
-NO FEE | Atlas Staking (Autocompound Rewards),3,,2,1
-Oldcat - airdrop DHK every month,3,,2,1
-Oni ⛩️,0,,0,0
-papadritta,0,,0,0
-polkachu.com,3,,2,1
-pro-nodes75,0,,0,0
-P2P.ORG - P2P Validator,0,,0,0
-Provalidator,3,,2,1
-POSTHUMAN 🧬 StakeDrop,0,,0,0
-PRO Delegators,3,,2,1
-Quasar,0,,0,0
-Silk Nodes,3,,2,1
-Simply Staking,3,,2,1
-Smart Stake 📈📊,0,,0,0
-stake.systems,3,,2,1
-Stake&Relax 🦥,3,,2,1
-Stakecito,0,,0,0
-Stakeflow,3,,2,1
-Stakely,3,,2,1
-TerraBitcoin Club,3,,2,1
-Tessellated,3,,2,1
-Ubik Capital,0,,0,0
-Virtual Hive,0,,0,0
-w3coins,3,,2,1
-WeStaking,3,,2,1
-WhisperNode,0,,0,0
-Witval,3,,2,1
-Ztake.org,3,,2,1
+"Last updated: Jan 5, 2026","December 2025 payouts will occur on ~January 12, 2026.",,,,,,,,
+Moniker,Total points earned,,Perfection bonus - completing all tasks perfectly this period (so far),Unjailed bonus - remain unjailed for the entire period,Dec 16 - Vote on a feemarket param update proposal,,,Provider uptime - must be >0.8 to qualify for TIP this period,Hub uptime - must be >0.8 to qualify for TIP this period
+🐹 Quokka Stake,4,,2,1,1,,,100%,100%
+01node,4,,2,1,1,,,100%,100%
+BlockHunters,4,,2,1,1,,,100%,100%
+Blockpower,1,,0,1,0,,,100%,100%
+blockscape,1,,0,1,0,,,100%,100%
+Bro_n_Bro,4,,2,1,1,,,50%,100%
+Citadel.one,4,,2,1,1,,,100%,99%
+Citizen Web3,4,,2,1,1,,,100%,100%
+Compass,4,,2,1,1,,,100%,100%
+Cosmos Spaces,4,,2,1,1,,,100%,100%
+cosmosrescue,4,,2,1,1,,,99%,99%
+Cosmostation,1,,0,1,0,,,100%,100%
+Crosnest,1,,0,1,0,,,100%,100%
+Crouton Digital,4,,2,1,1,,,100%,100%
+CrowdControl,4,,2,1,1,,,100%,100%
+CryptoCrew Validators,4,,2,1,1,,,100%,100%
+dForce,1,,0,1,0,,,100%,99%
+DragonStake,4,,2,1,1,,,100%,100%
+DELIGHT,1,,0,1,0,,,100%,100%
+DSRV,1,,0,1,0,,,100%,100%
+Easy 2 Stake,4,,2,1,1,,,100%,100%
+ECO Stake 🌱,4,,2,1,1,,,100%,100%
+Enigma,1,,0,1,0,,,100%,100%
+Everstake,0,,0,0,0,,,0%,100%
+Golden Ratio Staking,1,,0,1,0,,,100%,100%
+HashQuark,4,,2,1,1,,,100%,100%
+High Stakes,4,,2,1,1,,,100%,100%
+Huginn,4,,2,1,1,,,99%,100%
+Inter Blockchain Services,4,,2,1,1,,,100%,100%
+Interstellar Lounge,4,,2,1,1,,,100%,100%
+Irisnet,0,,0,0,0,,,0%,99%
+ITRocket,4,,2,1,1,,,100%,84%
+KalpaTech,1,,0,1,0,,,100%,100%
+kjnodes.com 🦄,4,,2,1,1,,,99%,100%
+Lavender.Five Nodes 🐝,0,,0,0,0,,,0%,100%
+node101,4,,2,1,1,,,100%,100%
+NodeStake,4,,2,1,1,,,100%,100%
+NO FEE | Atlas Staking (Autocompound Rewards),4,,2,1,1,,,100%,99%
+Oldcat - airdrop DHK every month,4,,2,1,1,,,100%,100%
+papadritta,1,,0,1,0,,,100%,0%
+polkachu.com,4,,2,1,1,,,100%,100%
+pro-nodes75,1,,0,1,0,,,100%,0%
+P2P.ORG - P2P Validator,1,,0,1,0,,,99%,100%
+Provalidator,4,,2,1,1,,,100%,99%
+POSTHUMAN 🧬 StakeDrop,1,,0,1,0,,,100%,100%
+PRO Delegators,4,,2,1,1,,,100%,100%
+Quasar,1,,0,1,0,,,99%,100%
+Silk Nodes,4,,2,1,1,,,100%,100%
+Simply Staking,4,,2,1,1,,,100%,100%
+Smart Stake 📈📊,1,,0,1,0,,,100%,100%
+stake.systems,4,,2,1,1,,,100%,100%
+Stake&Relax 🦥,4,,2,1,1,,,100%,100%
+Stakecito,1,,0,1,0,,,100%,100%
+Stakeflow,4,,2,1,1,,,100%,100%
+Stakely,4,,2,1,1,,,100%,100%
+TerraBitcoin Club,4,,2,1,1,,,100%,100%
+Tessellated,4,,2,1,1,,,100%,100%
+Ubik Capital,1,,0,1,0,,,100%,100%
+w3coins,4,,2,1,1,,,100%,100%
+WeStaking,4,,2,1,1,,,100%,99%
+WhisperNode,0,,0,0,0,,,0%,0%
+Witval,4,,2,1,1,,,100%,100%
+Ztake.org,4,,2,1,1,,,100%,100%
