@@ -1,67 +1,65 @@
-"Last updated: January 29, 2026",,,,,
-Moniker,Total points earned,,Perfection bonus - completing all tasks perfectly this period (so far),Jan 6 - Sign within 5 blocks after the v25.3.0 upgrade,Jan 29 - Sign within 5 blocks after the v26.0.0-rc0 upgrade
-🐹 Quokka Stake,4,,2,1,1
-01node,1,,0,0,1
-BlockHunters,4,,2,1,1
-Blockpower,4,,2,1,1
-blockscape,0,,0,0,0
-Bro_n_Bro,4,,2,1,1
-Citadel.one,4,,2,1,1
-Citizen Web3,4,,2,1,1
-Compass,4,,2,1,1
-Cosmos Spaces,4,,2,1,1
-cosmosrescue,4,,2,1,1
-Cosmostation,4,,2,1,1
-Crosnest,1,,0,0,1
-Crouton Digital,4,,2,1,1
-CrowdControl,4,,2,1,1
-CryptoCrew Validators,4,,2,1,1
-dForce,4,,2,1,1
-DragonStake,4,,2,1,1
-DELIGHT,1,,0,0,1
-DSRV,0,,0,0,0
-Easy 2 Stake,0,,0,0,0
-ECO Stake 🌱,4,,2,1,1
-Enigma,1,,0,0,1
-Everstake,0,,0,0,0
-Golden Ratio Staking,1,,0,0,1
-HashQuark,4,,2,1,1
-High Stakes,4,,2,1,1
-Huginn,4,,2,1,1
-Inter Blockchain Services,4,,2,1,1
-Interstellar Lounge,4,,2,1,1
-Irisnet,4,,2,1,1
-ITRocket,4,,2,1,1
-KalpaTech,0,,0,0,0
-kjnodes.com 🦄,4,,2,1,1
-Lavender.Five Nodes 🐝,0,,0,0,0
-navs,1,,0,0,1
-node101,4,,2,1,1
-NodeStake,1,,0,1,0
-NO FEE | Atlas Staking (Autocompound Rewards),1,,0,0,1
-Oldcat - airdrop DHK every month,1,,0,1,0
-papadritta,0,,0,0,0
-polkachu.com,4,,2,1,1
-pro-nodes75,4,,2,1,1
-P2P.ORG - P2P Validator,1,,0,1,0
-Provalidator,4,,2,1,1
-POSTHUMAN 🧬 StakeDrop,1,,0,0,1
-PRO Delegators,4,,2,1,1
-Quasar,1,,0,0,1
-ShapeShift DAO,0,,0,0,0
-Silk Nodes,4,,2,1,1
-Simply Staking,4,,2,1,1
-Smart Stake 📈📊,4,,2,1,1
-stake.systems,1,,0,0,1
-Stake&Relax 🦥,4,,2,1,1
-Stakecito,4,,2,1,1
-Stakeflow,4,,2,1,1
-Stakely,4,,2,1,1
-TerraBitcoin Club,4,,2,1,1
-Tessellated,1,,0,1,0
-Ubik Capital,4,,2,1,1
-w3coins,4,,2,1,1
-WeStaking,4,,2,1,1
-WhisperNode,0,,0,0,0
-Witval,4,,2,1,1
-Ztake.org,1,,0,1,0
+"Last updated: Feb 2, 2026",,,,,,,,
+Moniker,Total points earned,,Perfection bonus - completing all tasks perfectly this period (so far),Unjailed bonus - remain unjailed for the entire period,Jan 6 - Sign within 5 blocks after the v25.3.0 upgrade,Jan 29 - Sign within 5 blocks after the v26.0.0-rc0 upgrade,,Provider uptime - must be >0.8 to qualify for this period
+🐹 Quokka Stake,5,,2,1,1,1,,100%
+01node,1,,0,0,0,1,,98%
+BlockHunters,5,,2,1,1,1,,100%
+Blockpower,5,,2,1,1,1,,100%
+blockscape,1,,0,1,0,0,,100%
+Bro_n_Bro,5,,2,1,1,1,,100%
+Citadel.one,5,,2,1,1,1,,100%
+Citizen Web3,5,,2,1,1,1,,100%
+Compass,5,,2,1,1,1,,100%
+Cosmos Spaces,5,,2,1,1,1,,100%
+cosmosrescue,5,,2,1,1,1,,100%
+Cosmostation,5,,2,1,1,1,,100%
+Crosnest,2,,0,1,0,1,,100%
+Crouton Digital,5,,2,1,1,1,,100%
+CrowdControl,5,,2,1,1,1,,100%
+CryptoCrew Validators,5,,2,1,1,1,,92%
+dForce,5,,2,1,1,1,,100%
+DragonStake,5,,2,1,1,1,,100%
+DELIGHT,2,,0,1,0,1,,100%
+DSRV,1,,0,1,0,0,,97%
+Easy 2 Stake,0,,0,0,0,0,,97%
+ECO Stake 🌱,5,,2,1,1,1,,100%
+Enigma,2,,0,1,0,1,,100%
+Everstake,0,,0,0,0,0,,0%
+Golden Ratio Staking,1,,0,0,0,1,,54%
+HashQuark,5,,2,1,1,1,,100%
+High Stakes,5,,2,1,1,1,,100%
+Huginn,5,,2,1,1,1,,100%
+Inter Blockchain Services,5,,2,1,1,1,,100%
+Interstellar Lounge,5,,2,1,1,1,,100%
+Irisnet,5,,2,1,1,1,,82%
+ITRocket,5,,2,1,1,1,,100%
+KalpaTech,1,,0,1,0,0,,100%
+kjnodes.com 🦄,5,,2,1,1,1,,100%
+Lavender.Five Nodes 🐝,0,,0,0,0,0,,0%
+node101,5,,2,1,1,1,,100%
+NodeStake,2,,0,1,1,0,,99%
+NO FEE | Atlas Staking (Autocompound Rewards),2,,0,1,0,1,,100%
+Oldcat - airdrop DHK every month,2,,0,1,1,0,,100%
+papadritta,0,,0,0,0,0,,0%
+polkachu.com,5,,2,1,1,1,,100%
+pro-nodes75,5,,2,1,1,1,,100%
+P2P.ORG - P2P Validator,2,,0,1,1,0,,100%
+Provalidator,5,,2,1,1,1,,100%
+POSTHUMAN 🧬 StakeDrop,2,,0,1,0,1,,100%
+PRO Delegators,5,,2,1,1,1,,100%
+Quasar,2,,0,1,0,1,,99%
+Silk Nodes,5,,2,1,1,1,,100%
+Simply Staking,5,,2,1,1,1,,100%
+Smart Stake 📈📊,5,,2,1,1,1,,100%
+stake.systems,1,,0,0,0,1,,91%
+Stake&Relax 🦥,5,,2,1,1,1,,100%
+Stakecito,5,,2,1,1,1,,100%
+Stakeflow,5,,2,1,1,1,,100%
+Stakely,5,,2,1,1,1,,100%
+TerraBitcoin Club,5,,2,1,1,1,,100%
+Tessellated,2,,0,1,1,0,,99%
+Ubik Capital,5,,2,1,1,1,,100%
+w3coins,5,,2,1,1,1,,100%
+WeStaking,5,,2,1,1,1,,100%
+WhisperNode,0,,0,0,0,0,,0%
+Witval,5,,2,1,1,1,,100%
+Ztake.org,2,,0,1,1,0,,99%
