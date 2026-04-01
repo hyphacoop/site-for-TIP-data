@@ -108,7 +108,7 @@ nav a:hover {
 }
 
 /* Mobile nav */
-@media (min-width: 1260px) {
+@media (min-width: 1246px) {
   nav {
       padding-left: 1rem;
       margin-left: 1rem;
