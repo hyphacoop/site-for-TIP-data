@@ -1,76 +1,77 @@
-"Last updated: April 28, 2026",,,,,,,
-Moniker,Total points earned,,Perfection bonus - completing all tasks perfectly this period (so far),Apr 7 - Sign within 5 blocks after the v27.2.0-rc0 upgrade,Apr 28 (1) - Instantiate wasm contract,Apr 28 (2) - Create denom,Apr 28 (3) - Mint token
-🐹 Quokka Stake,6,,2,1,1,1,1
-01node,6,,2,1,1,1,1
-0base.vc,3,,0,0,1,1,1
-Bit Cat🐱,6,,2,1,1,1,1
-BlockHunters,1,,0,1,0,0,0
-Blockpower,1,,0,1,0,0,0
-blockscape,6,,2,1,1,1,1
-Bro_n_Bro,0,,0,0,0,0,0
-Chiter in Cosmos ⚛,6,,2,1,1,1,1
-Citadel.one,1,,0,1,0,0,0
-Citizen Web3,6,,2,1,1,1,1
-Compass,6,,2,1,1,1,1
-Cosmos Spaces,6,,2,1,1,1,1
-cosmosrescue,6,,2,1,1,1,1
-Cosmostation,1,,0,1,0,0,0
-Crosnest,1,,0,1,0,0,0
-Crouton Digital,6,,2,1,1,1,1
-CrowdControl,3,,0,0,1,1,1
-CryptoCrew Validators,6,,2,1,1,1,1
-Cumulo,6,,2,1,1,1,1
-dForce,1,,0,1,0,0,0
-DragonStake,6,,2,1,1,1,1
-DELIGHT,0,,0,0,0,0,0
-DSRV,6,,2,1,1,1,1
-Easy 2 Stake,0,,0,0,0,0,0
-ECO Stake 🌱,6,,2,1,1,1,1
-Endorphine Stake,1,,0,1,0,0,0
-Enigma,1,,0,1,0,0,0
-EthicalNode,3,,0,0,1,1,1
-Everstake,0,,0,0,0,0,0
-GATA HUB,0,,0,0,0,0,0
-Golden Ratio Staking,6,,2,1,1,1,1
-HashQuark,6,,2,1,1,1,1
-High Stakes,6,,2,1,1,1,1
-Huginn,6,,2,1,1,1,1
-Inter Blockchain Services,6,,2,1,1,1,1
-Interstellar Lounge,6,,2,1,1,1,1
-Irisnet,3,,0,0,1,1,1
-ITRocket,6,,2,1,1,1,1
-KalpaTech,1,,0,1,0,0,0
-kjnodes.com 🦄,6,,2,1,1,1,1
-Lavender.Five Nodes 🐝,0,,0,0,0,0,0
-navs,6,,2,1,1,1,1
-node101,6,,2,1,1,1,1
-Nansen | Stake to Stack Points,6,,2,1,1,1,1
-NodeStake,6,,2,1,1,1,1
-NO FEE | Atlas Staking (Autocompound Rewards),0,,0,0,0,0,0
-Oldcat - airdrop DHK every month,6,,2,1,1,1,1
-papadritta,0,,0,0,0,0,0
-polkachu.com,6,,2,1,1,1,1
-pro-nodes75,6,,2,1,1,1,1
-P2P.ORG - P2P Validator,0,,0,0,0,0,0
-Provalidator,6,,2,1,1,1,1
-POSTHUMAN 🧬 StakeDrop,1,,0,1,0,0,0
-PRO Delegators,6,,2,1,1,1,1
-Quasar,0,,0,0,0,0,0
-ShapeShift DAO,1,,0,1,0,0,0
-Silk Nodes,6,,2,1,1,1,1
-Simply Staking,6,,2,1,1,1,1
-Smart Stake 📈📊,6,,2,1,1,1,1
-stake.systems,0,,0,0,0,0,0
-Sr20de,0,,0,0,0,0,0
-Stake&Relax 🦥,6,,2,1,1,1,1
-Stakecito,2,,0,1,1,0,0
-Stakeflow,6,,2,1,1,1,1
-Stakely,6,,2,1,1,1,1
-TerraBitcoin Club,6,,2,1,1,1,1
-Tessellated,6,,2,1,1,1,1
-Ubik Capital,1,,0,1,0,0,0
-w3coins,6,,2,1,1,1,1
-WeStaking,6,,2,1,1,1,1
-WhisperNode,0,,0,0,0,0,0
-Witval,6,,2,1,1,1,1
-Ztake.org,6,,2,1,1,1,1
+"Last updated: May 4, 2026",,,,,,,,,,
+Moniker,Total points earned,,Perfection bonus - completing all tasks perfectly this period (so far),Unjailed bonus - remain unjailed for the entire period,Apr 7 - Sign within 5 blocks after the v27.2.0-rc0 upgrade,Apr 28 (1) - Instantiate wasm contract,Apr 28 (2) - Create denom,Apr 28 (3) - Mint token,,Provider uptime - must be >0.8 to qualify for this period
+🐹 Quokka Stake,7,,2,1,1,1,1,1,,100%
+01node,7,,2,1,1,1,1,1,,100%
+0base.vc,4,,0,1,0,1,1,1,,100%
+Bit Cat🐱,7,,2,1,1,1,1,1,,100%
+BlockHunters,2,,0,1,1,0,0,0,,100%
+Blockpower,2,,0,1,1,0,0,0,,100%
+blockscape,7,,2,1,1,1,1,1,,100%
+Bro_n_Bro,0,,0,0,0,0,0,0,,0%
+Chiter in Cosmos ⚛,7,,2,1,1,1,1,1,,100%
+Citadel.one,2,,0,1,1,0,0,0,,100%
+Citizen Web3,7,,2,1,1,1,1,1,,100%
+Compass,7,,2,1,1,1,1,1,,100%
+Cosmos Spaces,7,,2,1,1,1,1,1,,100%
+cosmosrescue,7,,2,1,1,1,1,1,,100%
+Cosmostation,2,,0,1,1,0,0,0,,100%
+Crosnest,2,,0,1,1,0,0,0,,100%
+Crouton Digital,7,,2,1,1,1,1,1,,100%
+CrowdControl,4,,0,1,0,1,1,1,,100%
+CryptoCrew Validators,7,,2,1,1,1,1,1,,100%
+Cumulo,7,,2,1,1,1,1,1,,100%
+dForce,1,,0,0,1,0,0,0,,0%
+DragonStake,7,,2,1,1,1,1,1,,100%
+DELIGHT,1,,0,1,0,0,0,0,,98%
+DSRV,7,,2,1,1,1,1,1,,100%
+Easy 2 Stake,0,,0,0,0,0,0,0,,98%
+ECO Stake 🌱,7,,2,1,1,1,1,1,,100%
+Endorphine Stake,2,,0,1,1,0,0,0,,100%
+Enigma,2,,0,1,1,0,0,0,,100%
+EthicalNode,4,,0,1,0,1,1,1,,100%
+Everstake,0,,0,0,0,0,0,0,,0%
+GATA HUB,3,,0,1,1,1,0,0,,87%
+Golden Ratio Staking,7,,2,1,1,1,1,1,,100%
+HashQuark,7,,2,1,1,1,1,1,,100%
+High Stakes,7,,2,1,1,1,1,1,,100%
+Huginn,7,,2,1,1,1,1,1,,100%
+Inter Blockchain Services,7,,2,1,1,1,1,1,,100%
+Interstellar Lounge,7,,2,1,1,1,1,1,,100%
+Irisnet,4,,0,1,0,1,1,1,,6%
+ITRocket,7,,2,1,1,1,1,1,,100%
+KalpaTech,2,,0,1,1,0,0,0,,100%
+kjnodes.com 🦄,7,,2,1,1,1,1,1,,100%
+Lavender.Five Nodes 🐝,0,,0,0,0,0,0,0,,0%
+navs,7,,2,1,1,1,1,1,,100%
+node101,7,,2,1,1,1,1,1,,100%
+Nansen | Stake to Stack Points,7,,2,1,1,1,1,1,,100%
+NodeStake,7,,2,1,1,1,1,1,,100%
+NO FEE | Atlas Staking (Autocompound Rewards),1,,0,1,0,0,0,0,,98%
+Oldcat - airdrop DHK every month,7,,2,1,1,1,1,1,,100%
+papadritta,0,,0,0,0,0,0,0,,0%
+polkachu.com,7,,2,1,1,1,1,1,,100%
+pro-nodes75,7,,2,1,1,1,1,1,,100%
+P2P.ORG - P2P Validator,1,,0,1,0,0,0,0,,100%
+Provalidator,7,,2,1,1,1,1,1,,100%
+POSTHUMAN 🧬 StakeDrop,2,,0,1,1,0,0,0,,100%
+PRO Delegators,7,,2,1,1,1,1,1,,100%
+Quasar,0,,0,0,0,0,0,0,,98%
+ShapeShift DAO,2,,0,1,1,0,0,0,,99%
+Silk Nodes,7,,2,1,1,1,1,1,,100%
+Simply Staking,7,,2,1,1,1,1,1,,100%
+Smart Stake 📈📊,7,,2,1,1,1,1,1,,100%
+stake.systems,1,,0,1,0,0,0,0,,100%
+Sr20de,0,,0,0,0,0,0,0,,97%
+Stake&Relax 🦥,7,,2,1,1,1,1,1,,100%
+Stakecito,3,,0,1,1,1,0,0,,100%
+Stakeflow,7,,2,1,1,1,1,1,,100%
+Stakely,7,,2,1,1,1,1,1,,100%
+TerraBitcoin Club,7,,2,1,1,1,1,1,,100%
+Tessellated,7,,2,1,1,1,1,1,,100%
+Ubik Capital,2,,0,1,1,0,0,0,,100%
+VALIDARIOS,2,,0,1,1,0,0,0,,100%
+w3coins,7,,2,1,1,1,1,1,,100%
+WeStaking,7,,2,1,1,1,1,1,,100%
+WhisperNode,0,,0,0,0,0,0,0,,0%
+Witval,7,,2,1,1,1,1,1,,100%
+Ztake.org,7,,2,1,1,1,1,1,,100%
