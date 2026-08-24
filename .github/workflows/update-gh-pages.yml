@@ -3,8 +3,8 @@ name: Deploy GitHub Pages
 on:
   workflow_dispatch:
   push:
-    branches:
-      - main # Trigger on any push to the main branch
+    # branches:
+    #   - main # Trigger on any push to the main branch
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -12,7 +12,7 @@ jobs:
     steps:
     # Step 1: Check out the repository
     - name: Checkout repository
-      uses: actions/checkout@v3
+      uses: actions/checkout@v6
 
     # Step 2: Deploy to GitHub Pages
     - name: Deploy to GitHub Pages
@@ -30,7 +30,7 @@ jobs:
     steps:
     # Step 1: Check out the gh-pages branch (the generated site)
     - name: Checkout gh-pages branch
-      uses: actions/checkout@v3
+      uses: actions/checkout@v6
       with:
         ref: gh-pages
 
