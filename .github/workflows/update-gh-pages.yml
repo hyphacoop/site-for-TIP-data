@@ -2,8 +2,8 @@ name: Deploy GitHub Pages
 
 on:
   push:
-    branches:
-      - main # Trigger on any push to the main branch
+    # branches:
+    #   - main # Trigger on any push to the main branch
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -20,3 +20,39 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./site/ # Deploy the site directory
         publish_branch: gh-pages # The branch used for GitHub Pages
+
+  rsync-deploy:
+    runs-on: ubuntu-latest
+    needs: deploy # Wait for the gh-pages branch to be updated first
+    environment: deploy-selfhosted
+
+    steps:
+    # Step 1: Check out the gh-pages branch (the generated site)
+    - name: Checkout gh-pages branch
+      uses: actions/checkout@v3
+      with:
+        ref: gh-pages
+
+    # Step 2: Write the deploy private key to disk for ssh/rsync to use
+    - name: Set SSH key
+      run: |
+        if [ ! -d ~/.ssh ]
+        then
+          mkdir -m 700 ~/.ssh
+        fi
+        echo "${{ secrets.SSH_PRIV_KEY }}" > ~/.ssh/id_rsa
+        chmod 600 ~/.ssh/id_rsa
+
+    # Step 3: Trust the remote host's key
+    - name: Add server to known_hosts
+      run: |
+        ssh-keyscan files.polypore.xyz >> ~/.ssh/known_hosts
+
+    # Step 4: Sync the site to the remote server
+    - name: Deploy via rsync
+      run: |
+        rsync -avz --delete \
+          -e "ssh" \
+          --exclude '.git' \
+          --exclude '.nojekyll' \
+          ./ "gh-actions@files.polypore.xyz:/storage/testnets"
