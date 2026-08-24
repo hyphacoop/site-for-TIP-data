@@ -4,7 +4,7 @@ class CustomNav extends HTMLElement {
         const pages = await this.loadPages();
 
         this.innerHTML = `
-        <div class="container">
+        <div class="container" id="nav-container">
             <a href="/" class="title-link">
                 <h1 class="title">
                 <span class="mr2 purple uppercase">Hypha</span>

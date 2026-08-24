@@ -10,7 +10,7 @@ scan_directories() {
     local pages=()
 
     for file in "$dir"/*; do
-        if [ -d "$file" ]; then
+        if [[ -d "$file" && "$file" != *"/social/"* ]]; then  # Exclude everything in /social/
             local index_path="$file/index.html"
             if [ -f "$index_path" ]; then
                 local title=$(basename "$file" | sed -e 's/-/ /g' | awk '{for(i=1;i<=NF;i++) $i=toupper(substr($i,1,1)) substr($i,2)}1')

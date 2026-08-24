@@ -108,10 +108,32 @@ async function loadCSV(file) {
       // Populate table rows
       tableRows.forEach(row => {
         const tr = document.createElement('tr');
-        row.forEach(cell => {
+        row.forEach((cell, index) => {
           const td = document.createElement('td');
           td.textContent = cell.trim();
-          td.setAttribute('data-content', cell.trim());
+
+          // Add link emoji to the moniker column (first column)
+          if (index === 0) {
+            const formattedMoniker = formatMoniker(cell.trim());
+            const linkEmoji = document.createElement('span');
+            linkEmoji.textContent = ' 🔗';
+            linkEmoji.style.cursor = 'pointer';
+            linkEmoji.title = 'Copy link to clipboard';
+            linkEmoji.addEventListener('click', () => generateLinkForClipboard(formattedMoniker, td));
+
+            // Append the link emoji to the cell content
+            td.textContent = cell.trim();
+
+            // Update the data-content attribute to include the link emoji
+            td.setAttribute('data-content', cell.trim() + ' 🔗');
+
+            // Append the link emoji to the cell for interactivity
+            td.appendChild(linkEmoji);
+          } else {
+            // For other columns, set the data-content attribute as usual
+            td.setAttribute('data-content', cell.trim());
+          }
+
           tr.appendChild(td);
         });
         tableBody.appendChild(tr);
@@ -123,6 +145,42 @@ async function loadCSV(file) {
     }
   }
   
+  
+  // Format moniker to match folder names
+  function formatMoniker(moniker) {
+    return moniker
+      .trim()
+      .replace(/ /g, '_') // Replace spaces with underscores
+      .replace(/[^a-zA-Z0-9_ -]/g, ''); // Remove invalid characters
+  }
+
+  // Generate link for clipboard
+  function generateLinkForClipboard(moniker, tdElement) {
+    const baseUrl = window.location.origin;
+
+    // Get the selected month from the dropdown
+    const selectedMonth = monthSelector.options[monthSelector.selectedIndex].text.toLowerCase().replace(' ', '_');
+
+    // Construct the full URL
+    const validatorUrl = `${baseUrl}/social/${selectedMonth}/${moniker}/`;
+ 
+    // Copy the URL to the clipboard
+    navigator.clipboard.writeText(validatorUrl)
+      .then(() => {
+        // Add visual feedback by changing the border color of the entire <td>
+        tdElement.style.border = '1px solid #4CAF50'; // Green border for success
+        setTimeout(() => {
+          tdElement.style.border = ''; // Reset the border after 1 second
+        }, 800);
+      })
+      .catch(() => {
+        // Add visual feedback for failure
+        tdElement.style.border = '1px solid #FF0000'; // Red border for failure
+        setTimeout(() => {
+          tdElement.style.border = ''; // Reset the border after 1 second
+        }, 800);
+      });
+  }
   
   // CSV Parsing Function
   function parseCSV(csvText) {

@@ -1,4 +1,4 @@
-name: Update Files JSON
+name: Update JSON and generate social cards
 
 on:
   push:
@@ -20,26 +20,48 @@ jobs:
         sudo apt-get update
         sudo apt-get install -y bash
 
-    # Step 3: Run the bash script
+    # Step 3: install puppeteer with npm 
+    - name: Install puppeteer
+      run: |
+        npm install
+
+    # Step 4: Generate files.json for all CSV files
     - name: Generate files.json
       run: |
         chmod +x ./scripts/generate_file_json.sh
         ./scripts/generate_file_json.sh
 
-    # Step 4: Check if there are changes
+    # Step 5: Find the latest modified CSV file
+    - name: Find the latest modified CSV
+      id: find_csv
+      run: |
+        LATEST_CSV=$(ls -t site/data/*.csv | head -n 1)
+        echo "LATEST_CSV=$LATEST_CSV" >> $GITHUB_ENV
+        echo "Processing latest file: $LATEST_CSV"
+
+    # Step 6: Generate social cards for the latest CSV only
+    - name: Generate social cards for latest month
+      run: |
+        chmod +x ./scripts/generate_social_cards.sh
+        ./scripts/generate_social_cards.sh "$LATEST_CSV"
+
+    # Step 7: Check if there are changes
     - name: Check for changes
       id: changes
       run: |
         git add ./site/data/files.json
+        git add ./site/social/*
         git diff --cached --quiet || echo "has_changes=true" >> $GITHUB_ENV
 
-    # Step 5: Commit and push changes (if any)
+    # Step 8: Commit and push changes (if any)
     - name: Commit and push changes
       if: env.has_changes == 'true'
       run: |
         git config user.name "github-actions[bot]"
         git config user.email "github-actions[bot]@users.noreply.github.com"
-        git commit -m "Update files.json after new CSV upload"
+        git add ./site/data/files.json
+        git add ./site/social/*
+        git commit -m "Update files.json and social cards for latest CSV"
         git push
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
