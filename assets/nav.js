@@ -7,8 +7,11 @@ class CustomNav extends HTMLElement {
         <div class="container">
             <a href="/" class="title-link">
                 <h1 class="title">
-                <span class="mr2 purple uppercase">Hypha</span>
-                <span class="gray medium">Testnets</span>
+                <span class="gray medium">Cosmos Hub Testnet</span>
+                <span>
+                    <span class="gray medium">Operated by</span>
+                    <span class="mr2 purple uppercase">Hypha</span>
+                </span>
                 </h1>
             </a>
              <nav>
